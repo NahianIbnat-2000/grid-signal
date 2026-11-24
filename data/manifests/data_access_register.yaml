@@ -1,0 +1,48 @@
+# Source-level data access register. Checked 2026-11-23.
+# "unknown" means: treat as NOT permitted until confirmed in writing.
+
+youtube_data_api_comments:
+  terms:
+    - https://developers.google.com/youtube/terms/api-services-terms-of-service
+    - https://developers.google.com/youtube/terms/developer-policies
+    - https://developers.google.com/youtube/terms/derived-metrics-policy
+  collect_raw_text: yes            # via official API with own API key
+  retain_raw_text: "max 30 days, then delete or refresh (Developer Policies III.E.4.d)"
+  use_for_inference: "yes, but storing sentiment beyond 30 days needs the derived-metrics amendment (Analytics & Reporting use case)"
+  use_for_model_training: unknown  # policies are silent; do NOT fine-tune on comments
+  use_for_human_annotation: "yes inside the 30-day window; keep IDs + labels, re-fetch text"
+  redistribute_raw_text: no
+  publish_aggregates: "yes with amendment accepted; label as GRID SIGNAL calculations, not YouTube data"
+  combine_with_external_data: "allowed only with clear labelling of which data is not from YouTube (III.E.4.h)"
+  user_deletion_requests: "honour within 7 days (III.E.4.g)"
+  status: BLOCKED_PENDING_AMENDMENT
+
+jolpica_f1:
+  terms: https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md
+  license: CC BY-NC-SA 4.0
+  commercial_use: no
+  redistribute: "yes, non-commercial, attribution, same licence"
+  rate_limits: "4 req/s burst, 500 req/h"
+  status: APPROVED
+
+fastf1:
+  note: "Python library; event and timing data come from Jolpica and the F1 live-timing feed. Check FastF1 docs for the timing-data terms before publishing lap-level data."
+  status: APPROVED_FOR_EVENT_METADATA_ONLY
+
+reddit:
+  status: NOT_USED   # would require Reddit for Researchers approval
+
+candidate_training_corpora:
+  Malekith/twitter_f1:
+    license: none stated
+    status: REJECTED   # no licence, unclear provenance
+  SportsOri (Zenodo 15599619):
+    note: "redistributed YouTube comments; conflicts with the 30-day rule upstream"
+    status: REJECTED_FOR_TRAINING
+  general_domain_sentiment_corpus:
+    status: TODO   # pick one with an explicit licence that allows training (see report section 4)
+
+pretrained_checkpoints:
+  cardiffnlp/twitter-roberta-base-sentiment-latest:
+    license: "not stated on model card at time of check"
+    status: EVALUATE_ONLY_UNTIL_LICENCE_CONFIRMED

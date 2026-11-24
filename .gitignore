@@ -1,0 +1,7 @@
+.env
+data/restricted/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+website/dist/

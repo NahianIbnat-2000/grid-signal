@@ -1,0 +1,30 @@
+# Sampling frame for the pilot. Fixed BEFORE looking at comment data.
+# Rule: every upload from each channel inside the window whose title matches
+# a keyword. No filtering on views, likes or comment counts.
+#
+# Channel handles are resolved with channels.list?forHandle=... (1 unit).
+# Only @Formula1 is filled in. Add the other channels yourself after checking
+# each handle on YouTube, and record why each was chosen in docs/feasibility_report.md.
+
+window:
+  start: "2025-02-20T00:00:00Z"   # 2025 pre-season testing
+  end:   "2025-12-15T23:59:59Z"   # one week after the season finale
+
+title_keywords:
+  - "grand prix"
+  - "\\bGP\\b"
+  - "highlights"
+  - "qualifying"
+  - "race"
+  - "sprint"
+
+channels:
+  - handle: "@Formula1"
+    category: official
+    max_upload_pages: 40          # 50 uploads per page
+  # - handle: "@<journalism channel>"
+  #   category: journalism
+  # - handle: "@<race analysis channel>"
+  #   category: analysis
+  # - handle: "@<independent commentary channel>"
+  #   category: independent_commentary
