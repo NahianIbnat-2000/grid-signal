@@ -24,4 +24,7 @@ def dedup_key(text: str) -> str:
     t = _URL.sub("", t)
     t = re.sub(r"[^\w\s]", "", t)
     t = _WS.sub(" ", t).strip()
+    if not t:
+        # emoji/punctuation-only comment: keep the symbols so "🔥" != "😂"
+        t = "sym:" + _WS.sub("", unicodedata.normalize("NFKC", text))
     return hashlib.sha256(t.encode()).hexdigest()

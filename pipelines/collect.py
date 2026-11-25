@@ -125,27 +125,46 @@ def run(frame_path: Path, dry_run: bool = False, max_comment_pages: int | None =
     store.upsert("sources", pd.DataFrame([s.model_dump() for s in sources]), key="video_id")
     existing = store.load("texts")
     seen = set(existing["record_id"]) if not existing.empty else set()
+    status = store.load("video_status")
+    complete = set(status.loc[status["complete"], "video_id"]) if not status.empty else set()
 
-    new_rows, unavailable = [], []
+    new_rows, unavailable, status_rows = [], [], []
     for s in sources:
+        # Only a video whose last pass finished may stop at the first known comment.
+        # A partial video is re-paged in full, skipping (not stopping at) known IDs.
+        incremental = s.video_id in complete
+        got = 0
         try:
             for item in yt.comment_threads(s.video_id, max_pages=max_comment_pages):
-                for rec in parse_thread(item):
-                    if rec.record_id in seen:
-                        break  # order=time: older comments were already collected
-                    new_rows.append(rec.model_dump())
-                    seen.add(rec.record_id)
+                rec = parse_thread(item)[0]
+                if rec.record_id in seen:
+                    if incremental:
+                        break
+                    continue
+                new_rows.append(rec.model_dump())
+                seen.add(rec.record_id)
+                got += 1
+            status_rows.append({"video_id": s.video_id, "complete": max_comment_pages is None,
+                                "reason": None, "checked_at": utcnow()})
         except YouTubeError as e:
-            unavailable.append({"video_id": s.video_id, "reason": e.reason, "checked_at": utcnow()})
+            unavailable.append({"video_id": s.video_id, "reason": e.reason,
+                                "collected_before_error": got, "checked_at": utcnow()})
+            status_rows.append({"video_id": s.video_id, "complete": False,
+                                "reason": e.reason, "checked_at": utcnow()})
         except QuotaExceeded:
+            status_rows.append({"video_id": s.video_id, "complete": False,
+                                "reason": "quota", "checked_at": utcnow()})
             log.warning("quota budget reached; stopping, rerun tomorrow to continue")
             break
 
+    if status_rows:
+        store.upsert("video_status", pd.DataFrame(status_rows), key="video_id")
     if new_rows:
         store.upsert("texts", pd.DataFrame(new_rows), key="record_id")
     if unavailable:
         store.upsert("unavailable_videos", pd.DataFrame(unavailable), key="video_id")
-    summary.update(new_comments=len(new_rows), unavailable_videos=len(unavailable),
+    summary.update(new_comments=len(new_rows), errors=len(unavailable),
+                   incomplete_videos=sum(not r["complete"] for r in status_rows),
                    units_used=quota.units_used)
     return summary
 

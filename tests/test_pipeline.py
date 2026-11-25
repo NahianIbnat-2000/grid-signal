@@ -219,3 +219,48 @@ def test_rate_limiter_sleeps_on_burst():
     rl = RateLimiter(per_second=2, per_hour=100, clock=lambda: t[0], sleep=lambda s: slept.append(s))
     rl.wait(); rl.wait(); rl.wait()
     assert slept and slept[0] > 0
+
+
+def test_pilot_stats_counts_without_text_leak():
+    from pipelines.pilot_stats import per_video
+    v = pd.Timestamp("2025-03-16T07:00:00Z")
+    texts = pd.DataFrame({
+        "record_id": ["a", "b", "c"], "video_id": ["v"] * 3,
+        "published_at": [v + pd.Timedelta(hours=1), v + pd.Timedelta(days=30), v + pd.Timedelta(hours=2)],
+        "text": ["Great drive from Leclerc today", "wow", "Ferrari ruined the strategy again"],
+        "text_hash": ["h1", "h2", "h3"]})
+    sources = pd.DataFrame({"video_id": ["v"], "video_type": ["race_highlights"],
+                            "gp_key": ["australian grand prix"], "published_at": [v]})
+    r = per_video(texts, sources).iloc[0]
+    assert r.n == 3 and r.share_24h == pytest.approx(2 / 3, abs=1e-3) and r.share_entity == pytest.approx(2 / 3, abs=1e-3)
+    assert "text" not in per_video(texts, sources).columns
+
+
+def test_emoji_only_comments_do_not_collide():
+    assert dedup_key("🔥🔥🔥") != dedup_key("😂")
+    assert dedup_key("🔥") == dedup_key(" 🔥 ")
+
+
+def test_partial_video_is_resumed_not_stopped(tmp_path, monkeypatch):
+    """Page 2 fails on run 1; run 2 must skip page 1 and still fetch page 2."""
+    import yaml
+    monkeypatch.chdir(tmp_path)
+    frame = {"window": {"start": "2025-01-01T00:00:00Z", "end": "2025-12-31T00:00:00Z"},
+             "video_types": {"race_highlights": "^Race Highlights"},
+             "channels": [{"handle": "@F1", "category": "official", "max_upload_pages": 1}]}
+    (tmp_path / "f.yaml").write_text(yaml.safe_dump(frame))
+    chan = FakeResp(200, {"items": [{"id": "UC1", "contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]})
+    ups = FakeResp(200, {"items": [_up("v1", "Race Highlights | 2025 Australian Grand Prix")]})
+    p1 = FakeResp(200, {"items": [thread("new", "x", vid="v1")], "nextPageToken": "t2"})
+    p2 = FakeResp(200, {"items": [thread("old", "y", vid="v1")]})
+    runs = [[chan, ups, p1, err(400, "processingFailure")], [chan, ups, p1, p2]]
+
+    def fake_client(quota):
+        return client(quota, runs.pop(0))
+    monkeypatch.setattr(collect, "YouTubeClient", fake_client)
+    r1 = collect.run(tmp_path / "f.yaml")
+    assert r1["new_comments"] == 1 and r1["incomplete_videos"] == 1
+    r2 = collect.run(tmp_path / "f.yaml")
+    assert r2["new_comments"] == 1 and r2["incomplete_videos"] == 0
+    from pipelines import store
+    assert set(store.load("texts")["record_id"]) == {"new", "old"}
