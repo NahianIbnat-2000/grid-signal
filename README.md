@@ -6,7 +6,7 @@ An independent NLP research observatory on sentiment, narratives and
 disagreement in Formula 1 online discussion. Not affiliated with or endorsed
 by Formula 1, the FIA, any team, or YouTube.
 
-## Status: Phase 1 (data feasibility)
+## Status: Phase 1 done, Phase 2 (annotation) starting
 
 | Component | State |
 |---|---|
@@ -16,7 +16,9 @@ by Formula 1, the FIA, any team, or YouTube.
 | 30-day retention + refresh | Built, tested offline |
 | Jolpica race calendar | Built, tested offline |
 | Privacy-safe aggregate export | Built, tested offline |
-| Annotation, models, topics, controversy index, website | Not started |
+| Annotation guide v1.0 + labelling workbook + agreement check | Built, tested offline |
+| Pilot (3 races, 12 videos) | Collected; diagnostics only, not findings |
+| Models, topics, controversy index, website | Not started |
 
 No findings exist yet. Nothing in this repo is a result.
 

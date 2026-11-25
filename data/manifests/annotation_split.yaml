@@ -1,0 +1,28 @@
+# Race-level split for annotation. Fixed once; never edit after labelling starts.
+seed: 2025
+dev:
+- austrian grand prix
+- belgian grand prix
+- mexico city grand prix
+- miami grand prix
+- monaco grand prix
+- saudi arabian grand prix
+test:
+- abu dhabi grand prix
+- australian grand prix
+- azerbaijan grand prix
+- bahrain grand prix
+- british grand prix
+- canadian grand prix
+- chinese grand prix
+- dutch grand prix
+- emilia romagna grand prix
+- hungarian grand prix
+- italian grand prix
+- japanese grand prix
+- las vegas grand prix
+- qatar grand prix
+- sao paulo grand prix
+- singapore grand prix
+- spanish grand prix
+- united states grand prix
