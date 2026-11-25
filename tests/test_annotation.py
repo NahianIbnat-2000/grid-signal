@@ -62,6 +62,7 @@ def test_workbook_roundtrip_and_validation(tmp_path):
     df = wbk.read_workbook(p)
     errs = wbk.validate(df)
     assert any("item 2" in e and "overall" in e for e in errs)
+    assert len(errs) == 2  # untouched rows (none here) would not be reported
     assert any("item 3" in e and "target_1" in e for e in errs)
     assert not any(e.startswith("item 1:") for e in errs)
     assert len(ws.data_validations.dataValidation) >= 8
@@ -73,3 +74,9 @@ def test_cohen_kappa_known_values():
     a = ["y"] * 5 + ["n"] * 5
     b = ["y"] * 4 + ["n"] + ["y"] * 2 + ["n"] * 3
     assert wbk.cohen_kappa(a, b) == pytest.approx((0.7 - 0.5) / 0.5)
+
+
+def test_untouched_rows_are_not_errors():
+    df = pd.DataFrame([{**{c: "" for c in wbk.LABEL_COLS}, "item": "1"},
+                       {**{c: "" for c in wbk.LABEL_COLS}, "item": "2", "overall": "neutral"}])
+    assert wbk.validate(df) == []

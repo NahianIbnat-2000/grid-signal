@@ -253,7 +253,7 @@ def test_partial_video_is_resumed_not_stopped(tmp_path, monkeypatch):
     ups = FakeResp(200, {"items": [_up("v1", "Race Highlights | 2025 Australian Grand Prix")]})
     p1 = FakeResp(200, {"items": [thread("new", "x", vid="v1")], "nextPageToken": "t2"})
     p2 = FakeResp(200, {"items": [thread("old", "y", vid="v1")]})
-    runs = [[chan, ups, p1, err(400, "processingFailure")], [chan, ups, p1, p2]]
+    runs = [[chan, ups, p1, err(400, "invalidPageToken")], [chan, ups, p1, p2]]
 
     def fake_client(quota):
         return client(quota, runs.pop(0))
@@ -264,3 +264,8 @@ def test_partial_video_is_resumed_not_stopped(tmp_path, monkeypatch):
     assert r2["new_comments"] == 1 and r2["incomplete_videos"] == 0
     from pipelines import store
     assert set(store.load("texts")["record_id"]) == {"new", "old"}
+
+
+def test_processing_failure_is_retried(quota):
+    yt = client(quota, [err(400, "processingFailure"), FakeResp(200, {"items": []})])
+    assert list(yt.comment_threads("v1")) == []

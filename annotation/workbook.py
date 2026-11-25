@@ -164,9 +164,15 @@ def read_workbook(path: Path) -> pd.DataFrame:
     return df
 
 
+def started(df: pd.DataFrame) -> pd.Series:
+    """Rows where any label cell has been filled in."""
+    return (df[LABEL_COLS] != "").any(axis=1)
+
+
 def validate(df: pd.DataFrame) -> list[str]:
+    """Check only rows that have been started; untouched rows are just 'not yet'."""
     errs = []
-    for r in df.itertuples():
+    for r in df[started(df)].itertuples():
         i = r.item
         if r.overall not in OVERALL:
             errs.append(f"item {i}: overall missing/invalid ({r.overall!r})")
@@ -200,6 +206,14 @@ def cmd_sample(args) -> None:
     texts, sources = store.load("texts"), store.load("sources")
     if texts.empty:
         raise SystemExit("no comments collected; run the full-season collection first")
+    status = store.load("video_status")
+    core = sources[sources["video_type"].isin(CORE_TYPES)]
+    if status.empty:
+        raise SystemExit("no video_status found; run the collection first")
+    open_vids = set(core["video_id"]) - set(status.loc[status["complete"], "video_id"])
+    if open_vids:
+        raise SystemExit(f"{len(open_vids)} core videos are not fully collected. Re-run "
+                         "pipelines.collect until incomplete_videos is 0, then sample again.")
     gps = sorted(sources["gp_key"].dropna().unique())
     if len(gps) < 24:
         raise SystemExit(f"only {len(gps)} races collected; collect the full season before sampling")
@@ -217,7 +231,7 @@ def cmd_load(args) -> None:
     df = read_workbook(ROOT / f"{args.batch}.xlsx")
     errs = validate(df)
     done = df[df["overall"] != ""]
-    print(f"{len(done)} of {len(df)} items labelled")
+    print(f"{len(done)} of {len(df)} items labelled | {int(started(df).sum())} started")
     if errs:
         print(f"{len(errs)} problems:")
         print("\n".join(errs[:40]))

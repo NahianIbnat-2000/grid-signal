@@ -63,7 +63,8 @@ class YouTubeClient:
                 raise YouTubeError(resp.status_code, reason, message)
             if reason in {"quotaExceeded", "dailyLimitExceeded"}:
                 raise YouTubeError(resp.status_code, reason, message)
-            if resp.status_code in RETRY_STATUS or reason in {"rateLimitExceeded", "userRateLimitExceeded"}:
+            if resp.status_code in RETRY_STATUS or reason in {
+                "rateLimitExceeded", "userRateLimitExceeded", "processingFailure", "backendError"}:
                 if attempt < self.max_retries:
                     delay = self.base_delay * (2 ** attempt) + random.uniform(0, 0.5)
                     log.warning("retry %s in %.1fs (%s)", method, delay, reason)
