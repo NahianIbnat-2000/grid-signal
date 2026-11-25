@@ -15,6 +15,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
+from .collect import gp_key
+
 BASE = "https://api.jolpi.ca/ergast/f1"
 
 
@@ -45,6 +47,7 @@ def races_to_frame(payload: dict) -> pd.DataFrame:
             "season": int(r["season"]), "round": int(r["round"]), "race_name": r["raceName"],
             "circuit_id": r["Circuit"]["circuitId"], "race_start_utc": start,
             "start_time_known": time_known,  # False -> do not use hour-level event windows
+            "gp_key": gp_key(r["raceName"]),
         })
     return pd.DataFrame(rows)
 

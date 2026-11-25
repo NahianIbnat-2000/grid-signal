@@ -1,30 +1,34 @@
-# Sampling frame for the pilot. Fixed BEFORE looking at comment data.
-# Rule: every upload from each channel inside the window whose title matches
-# a keyword. No filtering on views, likes or comment counts.
+# Sampling frame. Fixed BEFORE collecting any comments.
 #
-# Channel handles are resolved with channels.list?forHandle=... (1 unit).
-# Only @Formula1 is filled in. Add the other channels yourself after checking
-# each handle on YouTube, and record why each was chosen in docs/feasibility_report.md.
+# Rule: from each channel, every upload inside the window whose title matches
+# one of the per-weekend formats below. These formats appear for every race,
+# so each Grand Prix contributes the same kinds of video. This avoids picking
+# one-off "incident" videos (e.g. a penalty explainer) that exist only because
+# something controversial happened.
+#
+# Checked against the 2025 @Formula1 uploads on 2026-11-25:
+#   24 races x 4 core types + 6 sprint weekends x 2 sprint types = 108 videos.
+#
+# Excluded on purpose: F2/F3/F1 Academy, sim racing, historical "Extended
+# Highlights", livestreams, practice sessions, pole laps, ghost-car comparisons,
+# podcasts, Radio Rewind, Shorts, entertainment (F1 Kids, LEGO), incident
+# explainers. Incident videos can be studied later as a separate, clearly
+# labelled set, never mixed into the core sample.
 
 window:
-  start: "2025-02-20T00:00:00Z"   # 2025 pre-season testing
-  end:   "2025-12-15T23:59:59Z"   # one week after the season finale
+  start: "2025-02-20T00:00:00Z"
+  end:   "2025-12-15T23:59:59Z"
 
-title_keywords:
-  - "grand prix"
-  - "\\bGP\\b"
-  - "highlights"
-  - "qualifying"
-  - "race"
-  - "sprint"
+video_types:
+  qualifying_highlights: '^Qualifying Highlights \| 2025 '
+  qualifying_reactions:  '^(Drivers? React(ions)? (After|To) Qualifying|Driver Reactions After Qualifying) \| 2025 '
+  race_highlights:       '^Race Highlights \| 2025 '
+  race_reactions:        '^Drivers? React (After|To) The Race \| 2025 '
+  sprint_highlights:     '^(F1 )?Sprint Highlights \| 2025 '
+  sprint_reactions:      '^Drivers React After Sprint \| 2025 '
 
 channels:
   - handle: "@Formula1"
     category: official
-    max_upload_pages: 40          # 50 uploads per page
-  # - handle: "@<journalism channel>"
-  #   category: journalism
-  # - handle: "@<race analysis channel>"
-  #   category: analysis
-  # - handle: "@<independent commentary channel>"
-  #   category: independent_commentary
+    max_upload_pages: 80          # 40 only reached Aug 2025; 80 reaches pre-season
+  # Other channels need their own video_types: their titles follow other formats.

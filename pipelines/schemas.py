@@ -36,6 +36,8 @@ class SourceRecord(BaseModel):
     published_at: datetime
     collected_at: datetime = Field(default_factory=utcnow)
     sampling_rule: str = Field(description="Which rule in sampling_frame.yaml selected this video")
+    video_type: Optional[str] = None  # e.g. race_highlights, qualifying_reactions
+    gp_key: Optional[str] = None      # normalized Grand Prix name, joins to the race calendar
 
 
 class TextRecord(BaseModel):

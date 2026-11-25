@@ -112,19 +112,42 @@ def test_naive_timestamp_rejected():
         TextRecord(record_id="x", video_id="v", published_at=datetime(2025, 1, 1))
 
 
-def test_select_videos_respects_window_and_keywords():
-    import re
+def _up(vid, title, ts="2025-03-16T10:00:00Z"):
+    return {"snippet": {"title": title, "publishedAt": ts},
+            "contentDetails": {"videoId": vid, "videoPublishedAt": ts}}
+
+
+
+def _types():
+    import yaml
+    from pathlib import Path
+    f = yaml.safe_load(Path("data/manifests/sampling_frame.yaml").read_text())
+    return collect.compile_types(f)
+
+
+def test_select_videos_uses_fixed_formats_only():
     ups = [
-        {"snippet": {"title": "Australian GP Race Highlights", "publishedAt": "2025-03-16T10:00:00Z"},
-         "contentDetails": {"videoId": "in", "videoPublishedAt": "2025-03-16T10:00:00Z"}},
-        {"snippet": {"title": "Australian GP Race Highlights", "publishedAt": "2024-03-16T10:00:00Z"},
-         "contentDetails": {"videoId": "old", "videoPublishedAt": "2024-03-16T10:00:00Z"}},
-        {"snippet": {"title": "Merch unboxing", "publishedAt": "2025-03-16T10:00:00Z"},
-         "contentDetails": {"videoId": "off", "videoPublishedAt": "2025-03-16T10:00:00Z"}},
+        _up("race", "Race Highlights | 2025 Australian Grand Prix"),
+        _up("qrx", "Driver Reactions After Qualifying | 2025 Emilia-Romagna Grand Prix"),
+        _up("rrx", "Drivers React To The Race | 2025 Sao Paulo Grand Prix"),
+        _up("spr", "F1 Sprint Highlights | 2025 Chinese Grand Prix"),
+        _up("f2", "F2 Sprint Race Highlights | 2025 Australian Grand Prix"),
+        _up("hist", "Extended Race Highlights | 2008 Australian Grand Prix"),
+        _up("pen", "Max Verstappen's 10-Second Penalty For George Russell Collision | 2025 Spanish Grand Prix"),
+        _up("short", "F1's Hottest Race Ever! 😱"),
+        _up("old", "Race Highlights | 2025 Australian Grand Prix", ts="2024-03-16T10:00:00Z"),
     ]
-    sel = collect.select_videos(ups, datetime(2025, 1, 1, tzinfo=UTC), datetime(2025, 12, 31, tzinfo=UTC),
-                                re.compile("highlights", re.I))
-    assert [v["video_id"] for v in sel] == ["in"]
+    sel = collect.select_videos(ups, datetime(2025, 1, 1, tzinfo=UTC),
+                                datetime(2025, 12, 31, tzinfo=UTC), _types())
+    got = {v["video_id"]: v["video_type"] for v in sel}
+    assert got == {"race": "race_highlights", "qrx": "qualifying_reactions",
+                   "rrx": "race_reactions", "spr": "sprint_highlights"}
+
+
+def test_gp_key_matches_calendar_names():
+    # YouTube titles vs Jolpica race names
+    assert collect.gp_key("Sao Paulo Grand Prix") == collect.gp_key("São Paulo Grand Prix")
+    assert collect.gp_key("Emilia-Romagna Grand Prix") == collect.gp_key("Emilia Romagna Grand Prix")
 
 
 # ---------- dedup / preprocessing ---------------------------------------

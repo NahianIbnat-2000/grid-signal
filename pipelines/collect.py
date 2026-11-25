@@ -5,9 +5,10 @@ Usage:
     python -m pipelines.collect --frame data/manifests/sampling_frame.yaml --dry-run
     python -m pipelines.collect --frame data/manifests/sampling_frame.yaml
 
-Sampling: every upload from each listed channel inside the season window whose
-title matches the event keywords. No view-count or virality filter, so the
-sample is not tilted toward controversial videos.
+Sampling: from each listed channel, every upload inside the season window whose
+title matches one of the fixed per-weekend formats in sampling_frame.yaml
+(e.g. "Race Highlights | 2025 ... Grand Prix"). Same formats for every race,
+no view-count or virality filter, no one-off incident videos.
 """
 from __future__ import annotations
 
@@ -52,15 +53,44 @@ def parse_thread(item: dict) -> list[TextRecord]:
     return [rec]
 
 
-def select_videos(uploads: Iterable[dict], start: datetime, end: datetime, pattern: re.Pattern) -> list[dict]:
+GP_RE = re.compile(r"\|\s*(\d{4})\s+(.+?Grand Prix)", re.IGNORECASE)
+
+
+def gp_key(name: str) -> str:
+    """'Sao Paulo Grand Prix' / 'São Paulo Grand Prix' / 'Emilia-Romagna' -> one key."""
+    import unicodedata
+    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z]+", " ", s.lower()).strip()
+
+
+def classify(title: str, video_types: dict[str, re.Pattern]) -> str | None:
+    for vtype, pat in video_types.items():
+        if pat.search(title):
+            return vtype
+    return None
+
+
+def select_videos(uploads: Iterable[dict], start: datetime, end: datetime,
+                  video_types: dict[str, re.Pattern]) -> list[dict]:
+    """Keep only uploads whose title matches one of the fixed per-weekend formats."""
     out = []
     for it in uploads:
         sn = it["snippet"]
+        title = sn.get("title", "")
         pub = _ts(it["contentDetails"].get("videoPublishedAt") or sn["publishedAt"])
-        if start <= pub <= end and pattern.search(sn.get("title", "")):
-            out.append({"video_id": it["contentDetails"]["videoId"], "title": sn.get("title"),
-                        "published_at": pub})
+        if not (start <= pub <= end):
+            continue
+        vtype = classify(title, video_types)
+        if vtype is None:
+            continue
+        m = GP_RE.search(title)
+        out.append({"video_id": it["contentDetails"]["videoId"], "title": title, "published_at": pub,
+                    "video_type": vtype, "gp_key": gp_key(m.group(2)) if m else None})
     return out
+
+
+def compile_types(frame: dict) -> dict[str, re.Pattern]:
+    return {k: re.compile(v) for k, v in frame["video_types"].items()}
 
 
 def run(frame_path: Path, dry_run: bool = False, max_comment_pages: int | None = None) -> dict:
@@ -68,7 +98,7 @@ def run(frame_path: Path, dry_run: bool = False, max_comment_pages: int | None =
     quota = QuotaTracker(Path("data/restricted/quota_state.json"))
     yt = YouTubeClient(quota)
     start, end = _ts(frame["window"]["start"]), _ts(frame["window"]["end"])
-    pattern = re.compile("|".join(frame["title_keywords"]), re.IGNORECASE)
+    video_types = compile_types(frame)
 
     sources: list[SourceRecord] = []
     for ch in frame["channels"]:
@@ -79,12 +109,13 @@ def run(frame_path: Path, dry_run: bool = False, max_comment_pages: int | None =
             continue
         uploads_id = meta["contentDetails"]["relatedPlaylists"]["uploads"]
         vids = select_videos(yt.uploads(uploads_id, max_pages=ch.get("max_upload_pages", 20)),
-                             start, end, pattern)
+                             start, end, video_types)
         for v in vids:
             sources.append(SourceRecord(source_id=meta["id"], video_id=v["video_id"],
                                         channel_category=ch["category"], title=v["title"],
                                         published_at=v["published_at"],
-                                        sampling_rule=f"{ch['handle']}|keywords|window"))
+                                        sampling_rule=f"{ch['handle']}|{v['video_type']}",
+                                        video_type=v["video_type"], gp_key=v["gp_key"]))
         log.info("%s: %d videos selected", ch["handle"], len(vids))
 
     summary = {"videos_selected": len(sources), "units_used": quota.units_used}
