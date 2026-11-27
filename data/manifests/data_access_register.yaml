@@ -39,10 +39,25 @@ candidate_training_corpora:
   SportsOri (Zenodo 15599619):
     note: "redistributed YouTube comments; conflicts with the 30-day rule upstream"
     status: REJECTED_FOR_TRAINING
-  general_domain_sentiment_corpus:
-    status: TODO   # pick one with an explicit licence that allows training (see report section 4)
+  dynasent_v1.1:
+    source: https://github.com/cgpotts/dynasent (Potts et al., ACL 2021)
+    license: CC BY 4.0 per README (repo sidebar also shows Apache-2.0; README governs the data)
+    round_2: "sentences written by crowdworkers on Dynabench -> APPROVED_FOR_TRAINING (default)"
+    round_1: "sentences taken from the Yelp Academic Dataset; Yelp's own terms apply -> NOT used by default"
+    redistribute: "allowed with attribution, but not committed (kept in data/external/, gitignored)"
+    status: APPROVED_ROUND_2
 
 pretrained_checkpoints:
   cardiffnlp/twitter-roberta-base-sentiment-latest:
-    license: "not stated on model card at time of check"
-    status: EVALUATE_ONLY_UNTIL_LICENCE_CONFIRMED
+    license: "CC BY 4.0 (model card tag, re-checked 2026-11-27; earlier check showed no tag)"
+    use: inference only
+    status: APPROVED
+  distilbert/distilbert-base-uncased-finetuned-sst-2-english:
+    license: Apache-2.0
+    note: "binary; neutral created by a confidence band tuned on DEV labels"
+    use: inference only
+    status: APPROVED
+  distilbert/distilbert-base-uncased:
+    license: Apache-2.0
+    use: base for fine-tuning on DynaSent R2 (models/finetune_dynasent.py)
+    status: APPROVED

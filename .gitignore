@@ -5,3 +5,5 @@ __pycache__/
 .pytest_cache/
 node_modules/
 website/dist/
+data/external/
+models/artifacts/

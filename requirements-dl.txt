@@ -1,0 +1,6 @@
+# Extra packages for transformer models (large download, ~1 GB with torch).
+# CPU-only torch is enough for inference on the labelled set:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-dl.txt
+transformers>=4.44
+torch>=2.2
