@@ -36,7 +36,8 @@ def load_gold(split: str, batch: str = "batch_01") -> tuple[pd.DataFrame, dict]:
     df = meta.merge(labels, on="record_id").merge(texts, on="record_id", how="left")
     df = df[df["split"] == split]
     missing_text = int(df["text"].isna().sum())
-    counts = {"labelled": int(len(df)),
+    annotators = sorted(labels["annotator"].unique()) if "annotator" in labels else ["human"]
+    counts = {"labelled": int(len(df)), "annotator": annotators,
               "label_distribution": df["overall"].value_counts().to_dict(),
               "text_no_longer_available": missing_text}
     df = df[df["text"].notna() & df["overall"].isin(LABELS)].copy()
@@ -129,6 +130,7 @@ def main() -> None:
     out = {"split": a.split, "generated_at": utcnow().isoformat(), "counts": counts,
            "races": int(len(np.unique(clusters))), "bootstrap": f"cluster by race, {a.reps} reps",
            "note": "Sentiment estimated by GRID SIGNAL models; not YouTube data.",
+           "gold_labels_by": counts["annotator"],
            "models": results, "comparisons": comparisons}
     RESULTS.mkdir(parents=True, exist_ok=True)
     path = RESULTS / f"baselines_{a.split}.json"

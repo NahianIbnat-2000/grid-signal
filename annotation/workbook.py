@@ -243,6 +243,7 @@ def cmd_load(args) -> None:
     keep = done[~done["item"].isin(bad_items)].copy()
     keep = keep[["record_id"] + LABEL_COLS]
     keep["batch"], keep["guide_version"], keep["loaded_at"] = args.batch, GUIDE_VERSION, utcnow()
+    keep["annotator"] = args.annotator
     out = ROOT / f"labels_{args.batch}.parquet"
     keep.to_parquet(out, index=False)
     print(f"saved {len(keep)} labels -> {out}")
@@ -280,6 +281,8 @@ def main() -> None:
     p = sub.add_parser("load")
     p.add_argument("batch")
     p.add_argument("--partial", action="store_true")
+    p.add_argument("--annotator", default="human",
+                   help='who made the labels, e.g. "human" or "ai:claude-opus-5-5"')
     p.set_defaults(f=cmd_load)
     sub.add_parser("relabel").set_defaults(f=cmd_relabel)
     sub.add_parser("agreement").set_defaults(f=cmd_agreement)

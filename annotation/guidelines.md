@@ -1,6 +1,8 @@
 # GRID SIGNAL Annotation Guide (v1.0)
 
-Annotator: Nahian Ibnat (single annotator; see "Agreement" below)
+Annotator for batch_01: **AI (Claude Opus 5.5)**, at the project owner's request (27 Nov 2026).
+The labels are therefore AI-generated, not human. Any page or report using them must say so.
+Recorded in the labels file as `annotator = ai:claude-opus-5-5`.
 Unit: one top-level YouTube comment, read together with its video context
 (Grand Prix + video type, both shown in the workbook).
 
