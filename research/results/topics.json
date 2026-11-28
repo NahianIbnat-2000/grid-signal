@@ -1,0 +1,7701 @@
+{
+  "generated_at": "2026-11-28T08:56:32.142502+00:00",
+  "method": "TF-IDF + NMF, k=12, fit on 60000 comments, seed 0",
+  "unassigned_share": 0.506715427492848,
+  "min_weight": 0.02,
+  "stability": {
+    "per_topic": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean": 0.9999998215571795,
+    "seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "topics": [
+    {
+      "id": 0,
+      "name": "Topic 0 (unlabelled)",
+      "top_words": [
+        "max",
+        "max verstappen",
+        "max max",
+        "super",
+        "car",
+        "super max",
+        "goat",
+        "win",
+        "best",
+        "lap",
+        "mad",
+        "max goat"
+      ],
+      "overall_share": 0.09117291414752116,
+      "stability": 1.0
+    },
+    {
+      "id": 1,
+      "name": "Topic 1 (unlabelled)",
+      "top_words": [
+        "lando",
+        "oscar",
+        "lando norris",
+        "win",
+        "champion",
+        "lap",
+        "championship",
+        "great",
+        "congrats",
+        "congrats lando",
+        "happy",
+        "let"
+      ],
+      "overall_share": 0.047889816262128765,
+      "stability": 1.0
+    },
+    {
+      "id": 2,
+      "name": "Topic 2 (unlabelled)",
+      "top_words": [
+        "ferrari",
+        "lewis",
+        "williams",
+        "leclerc",
+        "charles",
+        "team",
+        "sainz",
+        "strategy",
+        "year",
+        "forza",
+        "bad",
+        "season"
+      ],
+      "overall_share": 0.03749668210104108,
+      "stability": 1.0
+    },
+    {
+      "id": 3,
+      "name": "Topic 3 (unlabelled)",
+      "top_words": [
+        "yuki",
+        "lawson",
+        "redbull",
+        "rb",
+        "liam",
+        "seat",
+        "tsunoda",
+        "car",
+        "hadjar",
+        "did",
+        "poor",
+        "let"
+      ],
+      "overall_share": 0.03523756156545846,
+      "stability": 1.0
+    },
+    {
+      "id": 4,
+      "name": "Topic 4 (unlabelled)",
+      "top_words": [
+        "piastri",
+        "champion",
+        "oscar piastri",
+        "championship",
+        "win",
+        "world",
+        "penalty",
+        "season",
+        "year",
+        "did",
+        "norris piastri",
+        "world champion"
+      ],
+      "overall_share": 0.03704249859910933,
+      "stability": 1.0
+    },
+    {
+      "id": 5,
+      "name": "Topic 5 (unlabelled)",
+      "top_words": [
+        "boring",
+        "monaco",
+        "track",
+        "season",
+        "highlights",
+        "races",
+        "year",
+        "gp",
+        "watch",
+        "calendar",
+        "boring boring",
+        "cars"
+      ],
+      "overall_share": 0.017872415725366443,
+      "stability": 1.0
+    },
+    {
+      "id": 6,
+      "name": "Topic 6 (unlabelled)",
+      "top_words": [
+        "stroll",
+        "lance",
+        "lance stroll",
+        "goat",
+        "alonso",
+        "interview",
+        "driver",
+        "did",
+        "great",
+        "does",
+        "man",
+        "new"
+      ],
+      "overall_share": 0.03027693396643761,
+      "stability": 1.0
+    },
+    {
+      "id": 7,
+      "name": "Topic 7 (unlabelled)",
+      "top_words": [
+        "red",
+        "bull",
+        "red bull",
+        "car",
+        "tsunoda",
+        "hadjar",
+        "lawson",
+        "driver",
+        "second",
+        "racing",
+        "seat",
+        "team"
+      ],
+      "overall_share": 0.02841301206240599,
+      "stability": 1.0
+    },
+    {
+      "id": 8,
+      "name": "Topic 8 (unlabelled)",
+      "top_words": [
+        "hamilton",
+        "lewis",
+        "leclerc",
+        "lewis hamilton",
+        "retire",
+        "car",
+        "sainz",
+        "podium",
+        "did",
+        "mercedes",
+        "great",
+        "penalty"
+      ],
+      "overall_share": 0.042203674757424724,
+      "stability": 1.0
+    },
+    {
+      "id": 9,
+      "name": "Topic 9 (unlabelled)",
+      "top_words": [
+        "mclaren",
+        "oscar",
+        "car",
+        "driver",
+        "team",
+        "championship",
+        "win",
+        "drivers",
+        "season",
+        "year",
+        "best",
+        "strategy"
+      ],
+      "overall_share": 0.05286224083522576,
+      "stability": 1.0
+    },
+    {
+      "id": 10,
+      "name": "Topic 10 (unlabelled)",
+      "top_words": [
+        "verstappen",
+        "max verstappen",
+        "lap",
+        "car",
+        "du",
+        "lawson",
+        "best",
+        "du du",
+        "champion",
+        "driver",
+        "simply",
+        "lovely"
+      ],
+      "overall_share": 0.03575072993777096,
+      "stability": 1.0
+    },
+    {
+      "id": 11,
+      "name": "Topic 11 (unlabelled)",
+      "top_words": [
+        "norris",
+        "lando norris",
+        "win",
+        "championship",
+        "champion",
+        "norris piastri",
+        "leclerc",
+        "piastri norris",
+        "antonelli",
+        "lap",
+        "pole",
+        "world"
+      ],
+      "overall_share": 0.03706609254726163,
+      "stability": 1.0
+    }
+  ],
+  "labels_by": "none yet",
+  "prevalence": [
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4048096192
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.1466265865
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0811623246
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0734802939
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0721442886
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0607882432
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0474281897
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0454241817
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0253841015
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0133600534
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0120240481
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0116900468
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0056780227
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4618473896
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.1224899598
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0843373494
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0702811245
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0562248996
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.046184739
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0421686747
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0281124498
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0261044177
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0240963855
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0200803213
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.016064257
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0020080321
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.3765135938
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.1768334476
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.1082933516
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0881882568
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0600868175
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0440941284
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0431802605
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0397532557
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.017135024
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.016906557
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.01667809
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0073109436
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0050262737
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.3262599469
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.192749779
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.1582670203
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0671971706
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0468611848
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0468611848
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0433244916
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0344827586
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0265251989
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0247568523
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.017683466
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0097259063
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0053050398
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5899640144
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.1633346661
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.056377449
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0419832067
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0363854458
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0293882447
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0279888045
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0151939224
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0131947221
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.012195122
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0065973611
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0041983207
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0031987205
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4722564735
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.215782984
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0604192355
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.055487053
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.045622688
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0369913687
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0320591862
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0283600493
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0147965475
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0135635018
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0123304562
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0123304562
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.6778285883
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0883611152
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.042779171
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0268476176
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.025815017
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0247824163
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0227172149
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0203569848
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0197669273
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0187343266
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0144564095
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0131287801
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0044254315
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.52
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.1391666667
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0708333333
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0591666667
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0441666667
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0408333333
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0358333333
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.025
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0233333333
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.015
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0141666667
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0091666667
+    },
+    {
+      "gp_key": "australian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0033333333
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5406019307
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0812038614
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0584894946
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0511073254
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0505394662
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0494037479
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.046564452
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0442930153
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0187393526
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0181714935
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0181714935
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0176036343
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0051107325
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4266958425
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1006564551
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0940919037
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0787746171
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0590809628
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0525164114
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0525164114
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0481400438
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0284463895
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0240700219
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0175054705
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0175054705
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.5696324952
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.086073501
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0560928433
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0473887814
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0454545455
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0399742102
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0338491296
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.027724049
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0254674404
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.024822695
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0164410058
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0157962605
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0112830432
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.425997426
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.1222651223
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.111969112
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.1055341055
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0501930502
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.045045045
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0321750322
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0296010296
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0205920206
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.018018018
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0167310167
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0115830116
+    },
+    {
+      "gp_key": "austrian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0102960103
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5759648266
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.1536394724
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0503175379
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0417684416
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0407914021
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0319980459
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0222276502
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0217391304
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0200293112
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.018075232
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0156326331
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0058622374
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0019540791
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.6457725948
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0714285714
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.055393586
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0495626822
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.029154519
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0262390671
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0262390671
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0247813411
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0204081633
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0189504373
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0160349854
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0160349854
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.523183391
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0809688581
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0785467128
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0577854671
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0494809689
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0397923875
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0387543253
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.037716263
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0276816609
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0235294118
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0224913495
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0176470588
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0024221453
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.5392670157
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.1291448517
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0558464223
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0506108202
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0488656195
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0453752182
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0366492147
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0261780105
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0209424084
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.017452007
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0104712042
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0104712042
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0087260035
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4569252737
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0994764398
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0928129462
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0723465017
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0623512613
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0509281295
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.035697287
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0314136126
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0299857211
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0290337934
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0261780105
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0095192765
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0033317468
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.3956670468
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.1824401368
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.1094640821
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0592930445
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0581527936
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0478905359
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0467502851
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0330672748
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0262257697
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0193842645
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0182440137
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0022805017
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0011402509
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.5528355773
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0767033864
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0705834353
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0452876377
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.044879641
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0407996736
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0359037128
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.035495716
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0273357813
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0252957976
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.021623827
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0183598531
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0048959608
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.3870246085
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.2293064877
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0883668904
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0514541387
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0458612975
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0413870246
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0357941834
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0324384787
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0302013423
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0279642058
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0134228188
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0100671141
+    },
+    {
+      "gp_key": "bahrain grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0067114094
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5108864697
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.1220839813
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0847589425
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0622083981
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0474339036
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0365474339
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0303265941
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0303265941
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0241057543
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0155520995
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0139968896
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0132192846
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0085536547
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4741784038
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1924882629
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.1455399061
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0563380282
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0328638498
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0328638498
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.014084507
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0117370892
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0117370892
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0093896714
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0070422535
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0070422535
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0046948357
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.5897707231
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.108994709
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0779541446
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0571428571
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0388007055
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0331569665
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0296296296
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0172839506
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0155202822
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0119929453
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0088183422
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0074074074
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0035273369
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.5529595016
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0825545171
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0576323988
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0498442368
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0420560748
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.03894081
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0373831776
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0327102804
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.031152648
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0295950156
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0202492212
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.015576324
+    },
+    {
+      "gp_key": "belgian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0093457944
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4637236084
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.2667946257
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0971209213
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.050671785
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0284069098
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0238003839
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0214971209
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0211132438
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0084452975
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0076775432
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0049904031
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0034548944
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.002303263
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4685185185
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.1685185185
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0981481481
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0907407407
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0333333333
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0296296296
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0240740741
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0222222222
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0203703704
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0203703704
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.012962963
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0111111111
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.7086198991
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0593764328
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0369096745
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0343878955
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0309491059
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0270518111
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0243007795
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0210912425
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0171939477
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0169646951
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0165061898
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0052728106
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0013755158
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.583840139
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0920938315
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0668983493
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0495221546
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0460469157
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0443092963
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0260642919
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.022589053
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0191138141
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0182450043
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0173761946
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0104257168
+    },
+    {
+      "gp_key": "british grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0034752389
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.6708542714
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0816582915
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0533919598
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.033919598
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0301507538
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0257537688
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0226130653
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0175879397
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.016959799
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0163316583
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0150753769
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0100502513
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0056532663
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.5396518375
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.1141199226
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1063829787
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.081237911
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0367504836
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0232108317
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0212765957
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0212765957
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0193423598
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0174081238
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0116054159
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0077369439
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4846211553
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.1534133533
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.1072768192
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0536384096
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0382595649
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0326331583
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0322580645
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0266316579
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0202550638
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0180045011
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0176294074
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0090022506
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0063765941
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4494875549
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.1874084919
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0907759883
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.055636896
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0409956076
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0351390922
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0307467057
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0292825769
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0292825769
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0234260615
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0117130307
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0102489019
+    },
+    {
+      "gp_key": "canadian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0058565154
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5801308258
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.1332788226
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.1156991006
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0453802126
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0384300899
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0208503679
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0179885527
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.014309076
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0122649223
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0102207686
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0049059689
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0036794767
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0028618152
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.5792880259
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1262135922
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0970873786
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0339805825
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0323624595
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0275080906
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0258899676
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0226537217
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0177993528
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0161812298
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0113268608
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0064724919
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.003236246
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.5921555016
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0687261368
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0527594585
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0492884415
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0430406109
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0385282888
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0347101701
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0312391531
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0298507463
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0183963901
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0163137799
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0145782714
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.010413051
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4458509142
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.1040787623
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0843881857
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0731364276
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0689170183
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0548523207
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0421940928
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0365682138
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0281293952
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0281293952
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0182841069
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0098452883
+    },
+    {
+      "gp_key": "chinese grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.005625879
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4837872892
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.2444876783
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0570687419
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0447470817
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0324254215
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0317769131
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0233463035
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0194552529
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0181582361
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0162127108
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0110246433
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0097276265
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0077821012
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4581395349
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.2186046512
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0651162791
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0604651163
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0418604651
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0279069767
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0255813953
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.023255814
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.023255814
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0209302326
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0186046512
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0093023256
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0069767442
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.6107603623
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0675267637
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0461158386
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.041723854
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0373318693
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0354103761
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0337633818
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0334888828
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0334888828
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0285479001
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.01427395
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0087839693
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0087839693
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.596069869
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0873362445
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0665938865
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0414847162
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0414847162
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0349344978
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0338427948
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0327510917
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0218340611
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0207423581
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0131004367
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0065502183
+    },
+    {
+      "gp_key": "dutch grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0032751092
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5862670934
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.1219086413
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0712830957
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0468431772
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0433517603
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0273494326
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0224032587
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0186208903
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0183299389
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0174570847
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0133837649
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0104742508
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0023276113
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4865229111
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.1226415094
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.102425876
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0700808625
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0471698113
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.039083558
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0309973046
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0309973046
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0242587601
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0215633423
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0175202156
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0053908356
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0013477089
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.5510625738
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1443329398
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0658205431
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0472255018
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0463400236
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0351239669
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0345336482
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0215466352
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0171192444
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0123966942
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0106257379
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0097402597
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0041322314
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4945054945
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.1412872841
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0565149137
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0533751962
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0486656201
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.043956044
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0392464678
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0376766091
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0266875981
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0235478807
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0172684458
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0125588697
+    },
+    {
+      "gp_key": "emilia romagna grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0047095761
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.6069951109
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.1064309891
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0808574652
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0778488153
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0319669049
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0278300113
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0218127115
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.016171493
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.016171493
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0045129748
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0041368936
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0037608123
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0015043249
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4802458297
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.2291483758
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.1132572432
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0693590869
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0254609306
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0245829675
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.021071115
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0158033363
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.007023705
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0043898156
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0043898156
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0043898156
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0008779631
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4455231931
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.1556993887
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0658036677
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0514203524
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0507011866
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0471053578
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0417116145
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0327220424
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0312837109
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0294857965
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0222941388
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0176195613
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0086299892
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4968287526
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0919661734
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0835095137
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0655391121
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.05602537
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0433403805
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0433403805
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0412262156
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.023255814
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0190274841
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0158562368
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0126849894
+    },
+    {
+      "gp_key": "hungarian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0073995772
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4595898673
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.2340168878
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0826296743
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0446320869
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0355850422
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0265379976
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0223160434
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0205066345
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0199034982
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0193003619
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.017490953
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0108564536
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0066344994
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4490861619
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.1592689295
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0861618799
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0626631854
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0574412533
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0365535248
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0365535248
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0313315927
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0313315927
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0234986945
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0156657963
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0078328982
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0026109661
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.3736724427
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.1654555618
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.129960872
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.07490218
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0676355506
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0667970933
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0416433762
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0223588597
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0150922303
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0134153158
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0117384013
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0103409726
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0069871437
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.3428961749
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.1721311475
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.1270491803
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.1256830601
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0642076503
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0368852459
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0341530055
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0273224044
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0177595628
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0163934426
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0163934426
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0150273224
+    },
+    {
+      "gp_key": "italian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0040983607
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.375548406
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.301842644
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0713658965
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0678560983
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0678560983
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0286633519
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0251535537
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0239836209
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.009651945
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0093594618
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0084820123
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0078970459
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0023398655
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4243176179
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.1799007444
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1191066998
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0607940447
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.040942928
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0334987593
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0334987593
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0297766749
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0272952854
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0210918114
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0186104218
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0086848635
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0024813896
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4800730149
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.1174323091
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0903559477
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0614542136
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0520231214
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0392455126
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0355947673
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0328567082
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0292059629
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0219044722
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.020687557
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0109522361
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0082141771
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4860606061
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0933333333
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0751515152
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0666666667
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0581818182
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0557575758
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0424242424
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0351515152
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0254545455
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0218181818
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0193939394
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0121212121
+    },
+    {
+      "gp_key": "japanese grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0084848485
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.5416020672
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0868217054
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0785529716
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0749354005
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0470284238
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0372093023
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0325581395
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0294573643
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0186046512
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0170542636
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0160206718
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.015503876
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0046511628
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4525423729
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.1186440678
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.106779661
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0694915254
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0644067797
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0542372881
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0355932203
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0288135593
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0271186441
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0254237288
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0118644068
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0050847458
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4174685418
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1128793486
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.1091783864
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0984455959
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0806809771
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0599555885
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0314581791
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.026276832
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0210954848
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0136935603
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0129533679
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0088823094
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0070318283
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.488372093
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.1245847176
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0913621262
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.049833887
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0465116279
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0465116279
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0448504983
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0382059801
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0249169435
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0182724252
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0149501661
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0099667774
+    },
+    {
+      "gp_key": "las vegas grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0016611296
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.3456439394
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.1434659091
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.1107954545
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.1060606061
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0847537879
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0733901515
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0464015152
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0317234848
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0222537879
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0189393939
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0099431818
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0037878788
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0028409091
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.3785617368
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.1085481682
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.1017639077
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0909090909
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.078697422
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0651289009
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0488466757
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0474898236
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0379918589
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0217096336
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0122116689
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0081411126
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4998592739
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1320011258
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.1148325359
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0717703349
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0419363918
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0360258936
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0343371798
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0323670138
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.011539544
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0078806642
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0075992119
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0056290459
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0042217844
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4863387978
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.1628415301
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0994535519
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0950819672
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0415300546
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0229508197
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0207650273
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0196721311
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.018579235
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.018579235
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0098360656
+    },
+    {
+      "gp_key": "mexico city grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0043715847
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4982841455
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.1612903226
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0933424846
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0672614962
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0624571036
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0267673301
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0219629375
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.013726836
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.013726836
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0130404942
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0130404942
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0096087852
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0054907344
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.5129533679
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.1450777202
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0880829016
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.085492228
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0388601036
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0336787565
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0259067358
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0233160622
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.018134715
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0103626943
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0103626943
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0051813472
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0025906736
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4245625619
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1010234401
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.093430175
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0855067679
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0660283922
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0647078244
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0534829977
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0376361836
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0356553318
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.017167382
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0105645428
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0062726973
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0039617035
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.445751634
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0928104575
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0836601307
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0797385621
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.060130719
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0509803922
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0483660131
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0444444444
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0405228758
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0196078431
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0183006536
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0091503268
+    },
+    {
+      "gp_key": "miami grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0065359477
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.580270793
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.1083172147
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0778529981
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0425531915
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0333655706
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0299806576
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0294970986
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0212765957
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0178916828
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0169245648
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0159574468
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0154738878
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0106382979
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.5399515738
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.1162227603
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0726392252
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0605326877
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0460048426
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0411622276
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0411622276
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0338983051
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0217917676
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0121065375
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.004842615
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.004842615
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.004842615
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.7278857596
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.1239587465
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0481951607
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0234034113
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0180483935
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0150733836
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0128917096
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0087266958
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0059500198
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0047600159
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0041650139
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0039666799
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0029750099
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.6848837209
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0848837209
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0523255814
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0418604651
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0372093023
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0220930233
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0174418605
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0151162791
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.011627907
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0104651163
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0081395349
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0081395349
+    },
+    {
+      "gp_key": "monaco grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0058139535
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.3417004049
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.1392712551
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.1117408907
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0947368421
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0947368421
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.044534413
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0429149798
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0380566802
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0299595142
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.024291498
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0186234818
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0137651822
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0056680162
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4289099526
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.1682464455
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.1563981043
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0521327014
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0450236967
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0426540284
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0260663507
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0236966825
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0165876777
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0165876777
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0142180095
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0071090047
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0023696682
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4137515078
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.1855247286
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1117008444
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0791314837
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0542822678
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.046079614
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.035464415
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.020747889
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.02026538
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0142340169
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0108564536
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0062726176
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0016887817
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.38138479
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.1850170261
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.1010215664
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0658342792
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0499432463
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0499432463
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0317820658
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0317820658
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0306469921
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0272417707
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.020431328
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0158910329
+    },
+    {
+      "gp_key": "qatar grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0090805902
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.432605905
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.1912708601
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.068677792
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.067394095
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0603337612
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0532734275
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0397946085
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0256739409
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0231065469
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0186136072
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.012195122
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0051347882
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0019255456
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4504132231
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.1797520661
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.1012396694
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0495867769
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.041322314
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0330578512
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0330578512
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0309917355
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0268595041
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0247933884
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0165289256
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0123966942
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.3606507984
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.2042783971
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0927990359
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0822536909
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0578487496
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0460982224
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0454956312
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0397710154
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0259114191
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0213919855
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0099427538
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0090388671
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0045194336
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4518950437
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.1049562682
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0816326531
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0699708455
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0670553936
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0524781341
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0364431487
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0335276968
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0320699708
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0306122449
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0218658892
+    },
+    {
+      "gp_key": "sao paulo grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0174927114
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.3939724038
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.2225853304
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0733478577
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0675381264
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0624546115
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0461147422
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0359477124
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0261437908
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0236020334
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0214233842
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.01416122
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0098039216
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0029048656
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4103773585
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.141509434
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0974842767
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0911949686
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0487421384
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0424528302
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0424528302
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0377358491
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.036163522
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0251572327
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0157232704
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0094339623
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.001572327
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4430335097
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1167548501
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.1111111111
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0737213404
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0617283951
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0553791887
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0253968254
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0250440917
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0239858907
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0218694885
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0194003527
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0186948854
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0038800705
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4462571977
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.1679462572
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.084452975
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0786948177
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0431861804
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0431861804
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0345489443
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0287907869
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0201535509
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0182341651
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0172744722
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0134357006
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0038387716
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.6472760849
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0960295476
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0433979686
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0369344414
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0341643583
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0313942752
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.027700831
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0240073869
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0184672207
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0175438596
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0101569714
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.0101569714
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0027700831
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4518072289
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.2931726908
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0702811245
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0361445783
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.0301204819
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0261044177
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0220883534
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0180722892
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0180722892
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0140562249
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0100401606
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0080321285
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0020080321
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4823672477
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.1353871099
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0822861775
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0628293474
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0620186461
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0555330361
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.034860154
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0259424402
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.0243210377
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0170247264
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0089177138
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0048642075
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0036481557
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4975922953
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.1043338684
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0914927769
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0529695024
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0497592295
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0465489567
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0353130016
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0304975923
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0240770465
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0224719101
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0208667737
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0128410915
+    },
+    {
+      "gp_key": "singapore grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0112359551
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4596560847
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.1283068783
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.1005291005
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0826719577
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0621693122
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.0476190476
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0310846561
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0271164021
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0251322751
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0119047619
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0105820106
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0066137566
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0066137566
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.4778761062
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1371681416
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.1216814159
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0420353982
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0420353982
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0376106195
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0331858407
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0287610619
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.0265486726
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0265486726
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0199115044
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0044247788
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0022123894
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4311724138
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.284137931
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0951724138
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0342068966
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0339310345
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0308965517
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0248275862
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0217931034
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0110344828
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0102068966
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0088275862
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0071724138
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.0066206897
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.4588926174
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.192114094
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.110738255
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0369127517
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.0360738255
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0352348993
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0310402685
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.0285234899
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0268456376
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0176174497
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.014261745
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0058724832
+    },
+    {
+      "gp_key": "spanish grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.0058724832
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": -1,
+      "share": 0.4197443182
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 0,
+      "share": 0.2592329545
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 9,
+      "share": 0.0809659091
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 10,
+      "share": 0.0696022727
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 4,
+      "share": 0.0397727273
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 7,
+      "share": 0.03125
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 6,
+      "share": 0.0262784091
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 11,
+      "share": 0.0262784091
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 1,
+      "share": 0.0149147727
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 2,
+      "share": 0.0134943182
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 8,
+      "share": 0.0085227273
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 3,
+      "share": 0.0056818182
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_highlights",
+      "topic": 5,
+      "share": 0.0042613636
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": -1,
+      "share": 0.3804034582
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 3,
+      "share": 0.1988472622
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 0,
+      "share": 0.0749279539
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 9,
+      "share": 0.0720461095
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 6,
+      "share": 0.0634005764
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 1,
+      "share": 0.0432276657
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 10,
+      "share": 0.0403458213
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 8,
+      "share": 0.0317002882
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 4,
+      "share": 0.0288184438
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 2,
+      "share": 0.023054755
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 7,
+      "share": 0.0201729107
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 11,
+      "share": 0.0201729107
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "qualifying_reactions",
+      "topic": 5,
+      "share": 0.0028818444
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": -1,
+      "share": 0.4958371878
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 0,
+      "share": 0.1637372803
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 9,
+      "share": 0.0758556892
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 11,
+      "share": 0.0573543016
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 10,
+      "share": 0.0434782609
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 5,
+      "share": 0.0351526364
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 4,
+      "share": 0.0323774283
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 1,
+      "share": 0.025439408
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 2,
+      "share": 0.0235892692
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 8,
+      "share": 0.0152636448
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 3,
+      "share": 0.0148011101
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 7,
+      "share": 0.0148011101
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_highlights",
+      "topic": 6,
+      "share": 0.0023126735
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": -1,
+      "share": 0.5195618153
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 3,
+      "share": 0.1142410016
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 0,
+      "share": 0.0892018779
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 1,
+      "share": 0.0547730829
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 6,
+      "share": 0.0500782473
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 9,
+      "share": 0.0406885759
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 2,
+      "share": 0.034428795
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 4,
+      "share": 0.0234741784
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 7,
+      "share": 0.0203442879
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 8,
+      "share": 0.0172143975
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 5,
+      "share": 0.014084507
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 11,
+      "share": 0.0125195618
+    },
+    {
+      "gp_key": "united states grand prix",
+      "video_type": "race_reactions",
+      "topic": 10,
+      "share": 0.0093896714
+    }
+  ]
+}

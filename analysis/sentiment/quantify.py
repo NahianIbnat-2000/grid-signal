@@ -18,17 +18,21 @@ from scipy.optimize import nnls
 LABELS = ["negative", "neutral", "positive"]
 
 
-def confusion_rates(gold, pred) -> np.ndarray:
-    """M[i, j] = P(pred = i | true = j), columns sum to 1."""
+def confusion_rates(gold, pred, weight=None) -> np.ndarray:
+    """M[i, j] = P(pred = i | true = j), columns sum to 1.
+
+    `weight` (sampling weights) re-weights the labelled sample back to the
+    collected population, so over-sampled strata do not distort the rates."""
     gold, pred = np.asarray(gold), np.asarray(pred)
+    w = np.ones(len(gold)) if weight is None else np.asarray(weight, dtype=float)
     M = np.zeros((3, 3))
     for j, t in enumerate(LABELS):
-        sel = pred[gold == t]
-        if len(sel) == 0:
+        m = gold == t
+        if w[m].sum() == 0:
             M[j, j] = 1.0
             continue
         for i, pl in enumerate(LABELS):
-            M[i, j] = np.mean(sel == pl)
+            M[i, j] = w[m & (pred == pl)].sum() / w[m].sum()
     return M
 
 
@@ -45,16 +49,23 @@ def shares(pred) -> np.ndarray:
     return np.array([np.mean(pred == l) for l in LABELS]) if len(pred) else np.full(3, np.nan)
 
 
-def adjusted_shares_ci(group_pred, gold, gold_pred, reps: int = 500, seed: int = 0) -> dict:
+def adjusted_draws(group_pred, gold, gold_pred, weight=None, reps: int = 500, seed: int = 0):
+    """Point estimate and bootstrap draws (reps x 3) of corrected shares."""
     rng = np.random.default_rng(seed)
     group_pred, gold, gold_pred = map(np.asarray, (group_pred, gold, gold_pred))
-    point = adjust(shares(group_pred), confusion_rates(gold, gold_pred))
+    w = np.ones(len(gold)) if weight is None else np.asarray(weight, dtype=float)
+    point = adjust(shares(group_pred), confusion_rates(gold, gold_pred, w))
     boot = []
     for _ in range(reps):
         gi = rng.integers(0, len(gold), len(gold))
         qi = rng.integers(0, len(group_pred), len(group_pred))
-        boot.append(adjust(shares(group_pred[qi]), confusion_rates(gold[gi], gold_pred[gi])))
-    boot = np.asarray(boot)
+        boot.append(adjust(shares(group_pred[qi]), confusion_rates(gold[gi], gold_pred[gi], w[gi])))
+    return point, np.asarray(boot)
+
+
+def adjusted_shares_ci(group_pred, gold, gold_pred, weight=None, reps: int = 500, seed: int = 0) -> dict:
+    group_pred = np.asarray(group_pred)
+    point, boot = adjusted_draws(group_pred, gold, gold_pred, weight, reps, seed)
     out = {"n": int(len(group_pred))}
     for k, lab in enumerate(LABELS):
         out[f"raw_{lab}"] = float(shares(group_pred)[k])
