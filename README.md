@@ -18,7 +18,9 @@ by Formula 1, the FIA, any team, or YouTube.
 | Privacy-safe aggregate export | Built, tested offline |
 | Annotation guide v1.0 + labelling workbook + agreement check | Built, tested offline |
 | Pilot (3 races, 12 videos) | Collected; diagnostics only, not findings |
-| Models, topics, controversy index, website | Not started |
+| Models (6, dev + test), corrected shares, controversy, topics | Done |
+| Website: The Signal Room redesign (React + Vite, GitHub Pages) | Done: `website/`, see `docs/design_audit.md` |
+| Driver-level sentiment, event studies, media framing | Pending |
 
 No findings exist yet. Nothing in this repo is a result.
 
@@ -44,3 +46,16 @@ python -m pipelines.retention refresh              # run at least every 30 days
 Raw data lives in `data/restricted/` (gitignored). Only
 `pipelines/export.py` writes public files, and it refuses text or author
 fields and suppresses groups with fewer than 10 comments.
+
+## Website
+
+```bash
+cd website
+npm install
+npm run dev      # local preview at http://localhost:5173
+npm run build    # production build in website/dist
+```
+
+The site reads only `research/results/*.json` (copied by `scripts/sync-data.mjs`,
+which refuses files containing text fields or API keys). Pushing to `master`
+deploys it with `.github/workflows/deploy.yml` (Settings > Pages > Source: GitHub Actions).

@@ -29,3 +29,16 @@ def test_race_draws_perfect_classifier_equal_weighting():
     # equal weighting: mean of (0.9 neg) and (0 neg) = 0.45, not volume-weighted 0.82
     assert point[0] == pytest.approx(0.45)
     assert draws.shape == (50, 3)
+
+
+def test_per_type_error_rates_are_used():
+    rng = np.random.default_rng(1)
+    # type A: perfect model; type B: model calls every negative "neutral"
+    gA = rng.choice(LAB, 300); pA = gA.copy()
+    gB = rng.choice(LAB, 300); pB = np.where(gB == "negative", "neutral", gB)
+    gold = np.concatenate([gA, gB]); pred = np.concatenate([pA, pB])
+    types = np.array(["A"] * 300 + ["B"] * 300)
+    # observed in B: 0% negative, 60% neutral -> truth with per-type rates: ~50% negative
+    groupB = np.array(["neutral"] * 60 + ["positive"] * 40)
+    point, _ = race_draws({"B": groupB}, gold, pred, np.ones(600), reps=20, cal_type=types)
+    assert point[0] > 0.35

@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-11-28T08:56:04.123251+00:00",
+  "generated_at": "2026-11-28T09:44:16.756991+00:00",
   "model": "roberta_twitter",
   "gold_labels_by": [
     "ai:claude-opus-5-5"
   ],
-  "definitions": "Race-level attention, negativity and disagreement, with uncertainty.\n\n  python -m analysis.polarization.controversy\n\nDefinitions (per race, pooling the 4 core video types with EQUAL weight, so a\nrace is not driven by which video happened to get more comments):\n\n  attention     comments on the race's 4 core videos (raw count; mostly reflects\n                audience size, e.g. the season opener)\n  negativity    corrected share of negative comments\n  net sentiment corrected positive share minus negative share\n  disagreement  sentiment bipolarity = variance of X in {-1, 0, +1}\n                = p_pos + p_neg - (p_pos - p_neg)^2, in [0, 1].\n                0 when everyone agrees (all negative, all positive or all\n                neutral); 1 when comments split 50/50 positive vs negative.\n                A heavily criticised race therefore scores HIGH negativity\n                but LOW disagreement, as the research brief requires.\n\nNOT measured: stance (who is right in an incident) and polarization in the\nsense of opposing camps. Sentiment split is a proxy, not stance.\n\nUncertainty: 1,000 bootstrap draws resample the labelled set (classifier\nerror rates, shared across video types in a draw) and each video's comments.\nWe also report P(top 3): the share of draws in which a race ranks in the top 3\nfor disagreement, so readers see how stable the ranking is.\n",
+  "definitions": "Race-level attention, negativity and disagreement, with uncertainty.\n\n  python -m analysis.polarization.controversy\n\nDefinitions (per race, pooling the 4 core video types with EQUAL weight, so a\nrace is not driven by which video happened to get more comments):\n\n  attention     comments on the race's 4 core videos (raw count; mostly reflects\n                audience size, e.g. the season opener)\n  negativity    corrected share of negative comments\n  net sentiment corrected positive share minus negative share\n  disagreement  sentiment bipolarity = variance of X in {-1, 0, +1}\n                = p_pos + p_neg - (p_pos - p_neg)^2, in [0, 1].\n                0 when everyone agrees (all negative, all positive or all\n                neutral); 1 when comments split 50/50 positive vs negative.\n                A heavily criticised race therefore scores HIGH negativity\n                but LOW disagreement, as the research brief requires.\n\nNOT measured: stance (who is right in an incident) and polarization in the\nsense of opposing camps. Sentiment split is a proxy, not stance.\n\nUncertainty: 1,000 bootstrap draws resample the labelled set (classifier\nerror rates, estimated separately per video type) and each video's comments.\nWe also report P(top 3): the share of draws in which a race ranks in the top 3\nfor disagreement, so readers see how stable the ranking is.\n",
   "note": "Sampled YouTube discourse on official F1 videos only. Rankings apply to this sample and this metric.",
   "rows": [
     {
       "gp_key": "belgian grand prix",
       "attention": 5189,
-      "negativity": 0.5200266414,
+      "negativity": 0.4879866568,
       "negativity_ci": [
-        0.4378173258,
-        0.5805300838
+        0.3683163439,
+        0.5560157051
       ],
-      "net_sentiment": -0.0968186551,
+      "net_sentiment": -0.0616468498,
       "net_sentiment_ci": [
-        -0.2019016285,
-        0.022741351
+        -0.1689929207,
+        0.0859805728
       ],
-      "disagreement": 0.9338607757,
+      "disagreement": 0.9105261297,
       "disagreement_ci": [
-        0.8452975969,
-        0.9860897662
+        0.7803668006,
+        0.9613449634
       ],
-      "p_top3_disagreement": 0.739,
+      "p_top3_disagreement": 0.696,
       "round": 13,
       "race_name": "Belgian Grand Prix",
       "race_start_utc": "2025-07-27 13:00:00+00:00"
@@ -33,22 +33,22 @@
     {
       "gp_key": "monaco grand prix",
       "attention": 8383,
-      "negativity": 0.5738531901,
+      "negativity": 0.5461783381,
       "negativity_ci": [
-        0.4857478664,
-        0.6335552228
+        0.4188401616,
+        0.613429102
       ],
-      "net_sentiment": -0.1945082453,
+      "net_sentiment": -0.1573078517,
       "net_sentiment_ci": [
-        -0.3078510983,
-        -0.0657064602
+        -0.2659206586,
+        -0.002900789
       ],
-      "disagreement": 0.9153646774,
+      "disagreement": 0.9103030642,
       "disagreement_ci": [
-        0.8173060118,
-        0.9687503105
+        0.7805374151,
+        0.9536682559
       ],
-      "p_top3_disagreement": 0.543,
+      "p_top3_disagreement": 0.648,
       "round": 8,
       "race_name": "Monaco Grand Prix",
       "race_start_utc": "2025-05-25 13:00:00+00:00"
@@ -56,22 +56,22 @@
     {
       "gp_key": "bahrain grand prix",
       "attention": 6323,
-      "negativity": 0.4138409002,
+      "negativity": 0.4113364115,
       "negativity_ci": [
-        0.3463827627,
-        0.4768969456
+        0.2977149113,
+        0.4748741239
       ],
-      "net_sentiment": 0.0659385569,
+      "net_sentiment": 0.0745806297,
       "net_sentiment_ci": [
-        -0.0385604195,
-        0.1829385285
+        -0.0309210448,
+        0.2201565119
       ],
-      "disagreement": 0.889272464,
+      "disagreement": 0.8916911823,
       "disagreement_ci": [
-        0.80238623,
-        0.9498891669
+        0.7369341642,
+        0.9540693804
       ],
-      "p_top3_disagreement": 0.328,
+      "p_top3_disagreement": 0.511,
       "round": 4,
       "race_name": "Bahrain Grand Prix",
       "race_start_utc": "2025-04-13 15:00:00+00:00"
@@ -79,160 +79,137 @@
     {
       "gp_key": "emilia romagna grand prix",
       "attention": 8204,
-      "negativity": 0.367570064,
+      "negativity": 0.3403211545,
       "negativity_ci": [
-        0.2870411369,
-        0.4378118782
+        0.2336535264,
+        0.4261969871
       ],
-      "net_sentiment": 0.1894540603,
+      "net_sentiment": 0.2130660697,
       "net_sentiment_ci": [
-        0.0727597832,
-        0.3157406663
+        0.0877148974,
+        0.3507679869
       ],
-      "disagreement": 0.8887013472,
+      "disagreement": 0.8483112287,
       "disagreement_ci": [
-        0.7716713362,
-        0.9670327968
+        0.686855657,
+        0.9485606049
       ],
-      "p_top3_disagreement": 0.336,
+      "p_top3_disagreement": 0.276,
       "round": 7,
       "race_name": "Emilia Romagna Grand Prix",
       "race_start_utc": "2025-05-18 13:00:00+00:00"
     },
     {
-      "gp_key": "hungarian grand prix",
-      "attention": 7525,
-      "negativity": 0.4721546064,
-      "negativity_ci": [
-        0.3893627693,
-        0.5578353211
-      ],
-      "net_sentiment": -0.0673437393,
-      "net_sentiment_ci": [
-        -0.1813140319,
-        0.04665254
-      ],
-      "disagreement": 0.8724302943,
-      "disagreement_ci": [
-        0.7639590785,
-        0.9493121018
-      ],
-      "p_top3_disagreement": 0.22,
-      "round": 14,
-      "race_name": "Hungarian Grand Prix",
-      "race_start_utc": "2025-08-03 13:00:00+00:00"
-    },
-    {
       "gp_key": "dutch grand prix",
       "attention": 6531,
-      "negativity": 0.4459474414,
+      "negativity": 0.412401765,
       "negativity_ci": [
-        0.3661491145,
-        0.5290099642
+        0.2855586251,
+        0.4981239993
       ],
-      "net_sentiment": -0.0209771855,
+      "net_sentiment": 0.0170665515,
       "net_sentiment_ci": [
-        -0.1421006451,
-        0.094497457
+        -0.1018620237,
+        0.1548506739
       ],
-      "disagreement": 0.8704776551,
+      "disagreement": 0.8415788143,
       "disagreement_ci": [
-        0.7656855163,
-        0.9519936019
+        0.6902186892,
+        0.9243287851
       ],
-      "p_top3_disagreement": 0.224,
+      "p_top3_disagreement": 0.201,
       "round": 15,
       "race_name": "Dutch Grand Prix",
       "race_start_utc": "2025-08-31 13:00:00+00:00"
     },
     {
-      "gp_key": "saudi arabian grand prix",
-      "attention": 7267,
-      "negativity": 0.3783311416,
-      "negativity_ci": [
-        0.2993357767,
-        0.4580536639
-      ],
-      "net_sentiment": 0.1131238353,
-      "net_sentiment_ci": [
-        0.0041371633,
-        0.2286634246
-      ],
-      "disagreement": 0.8569891164,
-      "disagreement_ci": [
-        0.7467723502,
-        0.9570391602
-      ],
-      "p_top3_disagreement": 0.203,
-      "round": 5,
-      "race_name": "Saudi Arabian Grand Prix",
-      "race_start_utc": "2025-04-20 17:00:00+00:00"
-    },
-    {
-      "gp_key": "british grand prix",
-      "attention": 8658,
-      "negativity": 0.3219322429,
-      "negativity_ci": [
-        0.2486113316,
-        0.3946706686
-      ],
-      "net_sentiment": 0.2736981012,
-      "net_sentiment_ci": [
-        0.1521185188,
-        0.4044115522
-      ],
-      "disagreement": 0.8426519364,
-      "disagreement_ci": [
-        0.729921154,
-        0.9388019512
-      ],
-      "p_top3_disagreement": 0.118,
-      "round": 12,
-      "race_name": "British Grand Prix",
-      "race_start_utc": "2025-07-06 14:00:00+00:00"
-    },
-    {
       "gp_key": "italian grand prix",
       "attention": 6351,
-      "negativity": 0.4489198426,
+      "negativity": 0.4205771421,
       "negativity_ci": [
-        0.3769937692,
-        0.5203245884
+        0.3010659225,
+        0.4917455112
       ],
-      "net_sentiment": -0.0538110899,
+      "net_sentiment": 0.0002633434,
       "net_sentiment_ci": [
-        -0.1671464008,
-        0.0623403032
+        -0.1075823758,
+        0.1402781791
       ],
-      "disagreement": 0.8411329618,
+      "disagreement": 0.8414175583,
       "disagreement_ci": [
-        0.7443416638,
-        0.9236463746
+        0.6959310947,
+        0.9068773943
       ],
-      "p_top3_disagreement": 0.077,
+      "p_top3_disagreement": 0.136,
       "round": 16,
       "race_name": "Italian Grand Prix",
       "race_start_utc": "2025-09-07 13:00:00+00:00"
     },
     {
+      "gp_key": "hungarian grand prix",
+      "attention": 7525,
+      "negativity": 0.4254423774,
+      "negativity_ci": [
+        0.3200188299,
+        0.5218089059
+      ],
+      "net_sentiment": -0.0172416736,
+      "net_sentiment_ci": [
+        -0.1338996628,
+        0.1150581772
+      ],
+      "disagreement": 0.8333458058,
+      "disagreement_ci": [
+        0.7076983399,
+        0.9333233955
+      ],
+      "p_top3_disagreement": 0.221,
+      "round": 14,
+      "race_name": "Hungarian Grand Prix",
+      "race_start_utc": "2025-08-03 13:00:00+00:00"
+    },
+    {
+      "gp_key": "british grand prix",
+      "attention": 8658,
+      "negativity": 0.2982514763,
+      "negativity_ci": [
+        0.1930485519,
+        0.3783356581
+      ],
+      "net_sentiment": 0.3052921234,
+      "net_sentiment_ci": [
+        0.183023653,
+        0.4474425153
+      ],
+      "disagreement": 0.8085917955,
+      "disagreement_ci": [
+        0.6295159816,
+        0.9119487273
+      ],
+      "p_top3_disagreement": 0.095,
+      "round": 12,
+      "race_name": "British Grand Prix",
+      "race_start_utc": "2025-07-06 14:00:00+00:00"
+    },
+    {
       "gp_key": "sao paulo grand prix",
       "attention": 6047,
-      "negativity": 0.4243821451,
+      "negativity": 0.3921644262,
       "negativity_ci": [
-        0.3415801688,
-        0.5035741931
+        0.2575780084,
+        0.4720032734
       ],
-      "net_sentiment": -0.0274494281,
+      "net_sentiment": 0.0151828243,
       "net_sentiment_ci": [
-        -0.143342915,
-        0.0932842856
+        -0.0992007311,
+        0.1675228218
       ],
-      "disagreement": 0.8205613911,
+      "disagreement": 0.7992811585,
       "disagreement_ci": [
-        0.7048338604,
-        0.9012690957
+        0.6328736186,
+        0.8740884574
       ],
-      "p_top3_disagreement": 0.029,
+      "p_top3_disagreement": 0.037,
       "round": 21,
       "race_name": "S\u00e3o Paulo Grand Prix",
       "race_start_utc": "2025-11-09 17:00:00+00:00"
@@ -240,206 +217,206 @@
     {
       "gp_key": "singapore grand prix",
       "attention": 4671,
-      "negativity": 0.5081402275,
+      "negativity": 0.4437823604,
       "negativity_ci": [
-        0.4089132467,
-        0.5959182427
+        0.3033074527,
+        0.5542410983
       ],
-      "net_sentiment": -0.1696125069,
+      "net_sentiment": -0.0933646215,
       "net_sentiment_ci": [
-        -0.2872776219,
-        -0.0509405168
+        -0.2312816163,
+        0.0523843872
       ],
-      "disagreement": 0.8178995457,
+      "disagreement": 0.7854831467,
       "disagreement_ci": [
-        0.7067476929,
-        0.9063166596
+        0.6376361591,
+        0.8763666608
       ],
-      "p_top3_disagreement": 0.033,
+      "p_top3_disagreement": 0.029,
       "round": 18,
       "race_name": "Singapore Grand Prix",
       "race_start_utc": "2025-10-05 12:00:00+00:00"
     },
     {
-      "gp_key": "japanese grand prix",
-      "attention": 8337,
-      "negativity": 0.3653269576,
-      "negativity_ci": [
-        0.281999725,
-        0.4521932926
-      ],
-      "net_sentiment": 0.0892335501,
-      "net_sentiment_ci": [
-        -0.0207136658,
-        0.2012788071
-      ],
-      "disagreement": 0.8119248388,
-      "disagreement_ci": [
-        0.6917127738,
-        0.921220778
-      ],
-      "p_top3_disagreement": 0.059,
-      "round": 3,
-      "race_name": "Japanese Grand Prix",
-      "race_start_utc": "2025-04-06 05:00:00+00:00"
-    },
-    {
-      "gp_key": "azerbaijan grand prix",
-      "attention": 8243,
-      "negativity": 0.3046476407,
-      "negativity_ci": [
-        0.2302808273,
-        0.372007836
-      ],
-      "net_sentiment": 0.2623807216,
-      "net_sentiment_ci": [
-        0.1430666731,
-        0.3990682778
-      ],
-      "disagreement": 0.8028323599,
-      "disagreement_ci": [
-        0.6822151039,
-        0.8881090525
-      ],
-      "p_top3_disagreement": 0.009,
-      "round": 17,
-      "race_name": "Azerbaijan Grand Prix",
-      "race_start_utc": "2025-09-21 11:00:00+00:00"
-    },
-    {
-      "gp_key": "mexico city grand prix",
-      "attention": 7317,
-      "negativity": 0.538923064,
-      "negativity_ci": [
-        0.4494169003,
-        0.6277406408
-      ],
-      "net_sentiment": -0.2305988813,
-      "net_sentiment_ci": [
-        -0.3487866854,
-        -0.1206866823
-      ],
-      "disagreement": 0.7940714026,
-      "disagreement_ci": [
-        0.6816717397,
-        0.8813767701
-      ],
-      "p_top3_disagreement": 0.007,
-      "round": 20,
-      "race_name": "Mexico City Grand Prix",
-      "race_start_utc": "2025-10-26 20:00:00+00:00"
-    },
-    {
-      "gp_key": "miami grand prix",
-      "attention": 5637,
-      "negativity": 0.3106294299,
-      "negativity_ci": [
-        0.2284736051,
-        0.3944384833
-      ],
-      "net_sentiment": 0.2201567704,
-      "net_sentiment_ci": [
-        0.1013927769,
-        0.3483015569
-      ],
-      "disagreement": 0.7929466268,
-      "disagreement_ci": [
-        0.6605274925,
-        0.9084846086
-      ],
-      "p_top3_disagreement": 0.032,
-      "round": 6,
-      "race_name": "Miami Grand Prix",
-      "race_start_utc": "2025-05-04 20:00:00+00:00"
-    },
-    {
       "gp_key": "spanish grand prix",
       "attention": 6781,
-      "negativity": 0.5214078557,
+      "negativity": 0.4817629907,
       "negativity_ci": [
-        0.4254387152,
-        0.612283702
+        0.3571371482,
+        0.5854854513
       ],
-      "net_sentiment": -0.2070684643,
+      "net_sentiment": -0.1670756861,
       "net_sentiment_ci": [
-        -0.3290131233,
-        -0.0847379944
+        -0.3006507778,
+        -0.0297500404
       ],
-      "disagreement": 0.7928698981,
+      "disagreement": 0.7685360104,
       "disagreement_ci": [
-        0.6660729611,
-        0.8839486759
+        0.6427969908,
+        0.8629369492
       ],
-      "p_top3_disagreement": 0.004,
+      "p_top3_disagreement": 0.017,
       "round": 9,
       "race_name": "Spanish Grand Prix",
       "race_start_utc": "2025-06-01 13:00:00+00:00"
     },
     {
+      "gp_key": "mexico city grand prix",
+      "attention": 7317,
+      "negativity": 0.4803127968,
+      "negativity_ci": [
+        0.3473176393,
+        0.5805339238
+      ],
+      "net_sentiment": -0.1679399352,
+      "net_sentiment_ci": [
+        -0.2943229054,
+        -0.0236479157
+      ],
+      "disagreement": 0.7644818365,
+      "disagreement_ci": [
+        0.6332722617,
+        0.8514973358
+      ],
+      "p_top3_disagreement": 0.012,
+      "round": 20,
+      "race_name": "Mexico City Grand Prix",
+      "race_start_utc": "2025-10-26 20:00:00+00:00"
+    },
+    {
+      "gp_key": "saudi arabian grand prix",
+      "attention": 7267,
+      "negativity": 0.3059072924,
+      "negativity_ci": [
+        0.1907368208,
+        0.4125384045
+      ],
+      "net_sentiment": 0.1857400776,
+      "net_sentiment_ci": [
+        0.0548565313,
+        0.3313021157
+      ],
+      "disagreement": 0.763055286,
+      "disagreement_ci": [
+        0.5956066455,
+        0.8989212982
+      ],
+      "p_top3_disagreement": 0.065,
+      "round": 5,
+      "race_name": "Saudi Arabian Grand Prix",
+      "race_start_utc": "2025-04-20 17:00:00+00:00"
+    },
+    {
+      "gp_key": "azerbaijan grand prix",
+      "attention": 8243,
+      "negativity": 0.2742566259,
+      "negativity_ci": [
+        0.1791169714,
+        0.3446277655
+      ],
+      "net_sentiment": 0.2966180537,
+      "net_sentiment_ci": [
+        0.1868573561,
+        0.4332666995
+      ],
+      "disagreement": 0.7571490358,
+      "disagreement_ci": [
+        0.5916920148,
+        0.8531418445
+      ],
+      "p_top3_disagreement": 0.008,
+      "round": 17,
+      "race_name": "Azerbaijan Grand Prix",
+      "race_start_utc": "2025-09-21 11:00:00+00:00"
+    },
+    {
+      "gp_key": "abu dhabi grand prix",
+      "attention": 9000,
+      "negativity": 0.2621170341,
+      "negativity_ci": [
+        0.1568926761,
+        0.3371737553
+      ],
+      "net_sentiment": 0.2978433635,
+      "net_sentiment_ci": [
+        0.1816151317,
+        0.43600373
+      ],
+      "disagreement": 0.7333667626,
+      "disagreement_ci": [
+        0.5515924155,
+        0.8337126127
+      ],
+      "p_top3_disagreement": 0.005,
+      "round": 24,
+      "race_name": "Abu Dhabi Grand Prix",
+      "race_start_utc": "2025-12-07 13:00:00+00:00"
+    },
+    {
       "gp_key": "canadian grand prix",
       "attention": 5458,
-      "negativity": 0.3949061364,
+      "negativity": 0.3328745438,
       "negativity_ci": [
-        0.3043989382,
-        0.488153046
+        0.2398377806,
+        0.445387432
       ],
-      "net_sentiment": -0.0056478107,
+      "net_sentiment": 0.0608063353,
       "net_sentiment_ci": [
-        -0.1225574348,
-        0.1241761371
+        -0.0729327394,
+        0.1849484988
       ],
-      "disagreement": 0.7841325644,
+      "disagreement": 0.7228580124,
       "disagreement_ci": [
-        0.6576911171,
-        0.8892781691
+        0.6037428146,
+        0.8543723518
       ],
-      "p_top3_disagreement": 0.015,
+      "p_top3_disagreement": 0.011,
       "round": 10,
       "race_name": "Canadian Grand Prix",
       "race_start_utc": "2025-06-15 18:00:00+00:00"
     },
     {
-      "gp_key": "united states grand prix",
-      "attention": 4556,
-      "negativity": 0.3329769254,
+      "gp_key": "japanese grand prix",
+      "attention": 8337,
+      "negativity": 0.2798014321,
       "negativity_ci": [
-        0.2431288243,
-        0.4271979963
+        0.1821226706,
+        0.3894675068
       ],
-      "net_sentiment": 0.1132780394,
+      "net_sentiment": 0.1842766824,
       "net_sentiment_ci": [
-        -0.018066853,
-        0.2404508837
+        0.0535702644,
+        0.3120011971
       ],
-      "disagreement": 0.766399976,
+      "disagreement": 0.7099216508,
       "disagreement_ci": [
-        0.6334508616,
-        0.8803746978
+        0.5585615818,
+        0.8536968265
       ],
-      "p_top3_disagreement": 0.011,
-      "round": 19,
-      "race_name": "United States Grand Prix",
-      "race_start_utc": "2025-10-19 19:00:00+00:00"
+      "p_top3_disagreement": 0.01,
+      "round": 3,
+      "race_name": "Japanese Grand Prix",
+      "race_start_utc": "2025-04-06 05:00:00+00:00"
     },
     {
       "gp_key": "las vegas grand prix",
       "attention": 5829,
-      "negativity": 0.4235349409,
+      "negativity": 0.3666236015,
       "negativity_ci": [
-        0.3324403635,
-        0.5190798306
+        0.2933538288,
+        0.4700328804
       ],
-      "net_sentiment": -0.0788699946,
+      "net_sentiment": -0.0313633148,
       "net_sentiment_ci": [
-        -0.2074641925,
-        0.0392617101
+        -0.1812486069,
+        0.0740137761
       ],
-      "disagreement": 0.7619794112,
+      "disagreement": 0.7009002307,
       "disagreement_ci": [
-        0.63654598,
-        0.8612076113
+        0.6024865302,
+        0.8195310982
       ],
-      "p_top3_disagreement": 0.004,
+      "p_top3_disagreement": 0.001,
       "round": 22,
       "race_name": "Las Vegas Grand Prix",
       "race_start_utc": "2025-11-23 04:00:00+00:00"
@@ -447,117 +424,140 @@
     {
       "gp_key": "qatar grand prix",
       "attention": 6683,
-      "negativity": 0.4605229884,
+      "negativity": 0.3923420166,
       "negativity_ci": [
-        0.3824849409,
-        0.5414774847
+        0.3215388133,
+        0.5024692467
       ],
-      "net_sentiment": -0.1432634773,
+      "net_sentiment": -0.0791810695,
       "net_sentiment_ci": [
-        -0.2587985845,
-        -0.0316939219
+        -0.218785292,
+        0.0364379559
       ],
-      "disagreement": 0.7572580755,
+      "disagreement": 0.6992333219,
       "disagreement_ci": [
-        0.6508462693,
-        0.8403087409
+        0.5978325808,
+        0.8073603636
       ],
-      "p_top3_disagreement": 0.0,
+      "p_top3_disagreement": 0.002,
       "round": 23,
       "race_name": "Qatar Grand Prix",
       "race_start_utc": "2025-11-30 16:00:00+00:00"
     },
     {
-      "gp_key": "abu dhabi grand prix",
-      "attention": 9000,
-      "negativity": 0.2830141981,
+      "gp_key": "united states grand prix",
+      "attention": 4556,
+      "negativity": 0.2690250065,
       "negativity_ci": [
-        0.2165651678,
-        0.3506774835
+        0.161233302,
+        0.3798956069
       ],
-      "net_sentiment": 0.2547098841,
+      "net_sentiment": 0.1854908775,
       "net_sentiment_ci": [
-        0.1384246244,
-        0.370835748
+        0.0572226555,
+        0.3223361865
       ],
-      "disagreement": 0.7558611553,
+      "disagreement": 0.6891340249,
       "disagreement_ci": [
-        0.6439301273,
-        0.8414523605
+        0.5278805968,
+        0.8239402546
       ],
-      "p_top3_disagreement": 0.001,
-      "round": 24,
-      "race_name": "Abu Dhabi Grand Prix",
-      "race_start_utc": "2025-12-07 13:00:00+00:00"
+      "p_top3_disagreement": 0.007,
+      "round": 19,
+      "race_name": "United States Grand Prix",
+      "race_start_utc": "2025-10-19 19:00:00+00:00"
     },
     {
       "gp_key": "austrian grand prix",
       "attention": 6097,
-      "negativity": 0.3455269625,
+      "negativity": 0.2756109204,
       "negativity_ci": [
-        0.2620319018,
-        0.4363691672
+        0.1743366708,
+        0.3856488167
       ],
-      "net_sentiment": 0.0688365725,
+      "net_sentiment": 0.1502978744,
       "net_sentiment_ci": [
-        -0.0495476014,
-        0.1857705004
+        0.0160460899,
+        0.2782128464
       ],
-      "disagreement": 0.7551520238,
+      "disagreement": 0.6789302642,
       "disagreement_ci": [
-        0.6281277687,
-        0.869431541
+        0.5294838474,
+        0.8171015803
       ],
-      "p_top3_disagreement": 0.005,
+      "p_top3_disagreement": 0.003,
       "round": 11,
       "race_name": "Austrian Grand Prix",
       "race_start_utc": "2025-06-29 13:00:00+00:00"
     },
     {
-      "gp_key": "australian grand prix",
-      "attention": 13792,
-      "negativity": 0.2658066737,
+      "gp_key": "miami grand prix",
+      "attention": 5637,
+      "negativity": 0.2358018387,
       "negativity_ci": [
-        0.1950626201,
-        0.3393079798
+        0.1627534516,
+        0.3424095259
       ],
-      "net_sentiment": 0.3287316612,
+      "net_sentiment": 0.2913110917,
       "net_sentiment_ci": [
-        0.2074133358,
-        0.4603912606
+        0.1598399318,
+        0.4061684177
       ],
-      "disagreement": 0.7522805036,
+      "disagreement": 0.6780526169,
       "disagreement_ci": [
-        0.6266742715,
-        0.8641366718
+        0.5589100987,
+        0.8410262581
       ],
-      "p_top3_disagreement": 0.002,
-      "round": 1,
-      "race_name": "Australian Grand Prix",
-      "race_start_utc": "2025-03-16 04:00:00+00:00"
+      "p_top3_disagreement": 0.006,
+      "round": 6,
+      "race_name": "Miami Grand Prix",
+      "race_start_utc": "2025-05-04 20:00:00+00:00"
     },
     {
       "gp_key": "chinese grand prix",
       "attention": 6656,
-      "negativity": 0.3638763319,
+      "negativity": 0.2794428076,
       "negativity_ci": [
-        0.2696540661,
-        0.4610846031
+        0.1990899264,
+        0.4057094343
       ],
-      "net_sentiment": 0.0067982631,
+      "net_sentiment": 0.0987571579,
       "net_sentiment_ci": [
-        -0.1119796698,
-        0.1193172497
+        -0.0542706497,
+        0.2202170861
       ],
-      "disagreement": 0.7345047105,
+      "disagreement": 0.6478897968,
       "disagreement_ci": [
-        0.6052069567,
-        0.8504415824
+        0.5367287378,
+        0.7936971434
       ],
-      "p_top3_disagreement": 0.001,
+      "p_top3_disagreement": 0.003,
       "round": 2,
       "race_name": "Chinese Grand Prix",
       "race_start_utc": "2025-03-23 07:00:00+00:00"
+    },
+    {
+      "gp_key": "australian grand prix",
+      "attention": 13792,
+      "negativity": 0.1901286823,
+      "negativity_ci": [
+        0.1014263299,
+        0.277742963
+      ],
+      "net_sentiment": 0.4156227216,
+      "net_sentiment_ci": [
+        0.2980391503,
+        0.5379906592
+      ],
+      "disagreement": 0.6231378395,
+      "disagreement_ci": [
+        0.451669047,
+        0.7763315848
+      ],
+      "p_top3_disagreement": 0.0,
+      "round": 1,
+      "race_name": "Australian Grand Prix",
+      "race_start_utc": "2025-03-16 04:00:00+00:00"
     }
   ]
 }

@@ -20,7 +20,7 @@ NOT measured: stance (who is right in an incident) and polarization in the
 sense of opposing camps. Sentiment split is a proxy, not stance.
 
 Uncertainty: 1,000 bootstrap draws resample the labelled set (classifier
-error rates, shared across video types in a draw) and each video's comments.
+error rates, estimated separately per video type) and each video's comments.
 We also report P(top 3): the share of draws in which a race ranks in the top 3
 for disagreement, so readers see how stable the ranking is.
 """
@@ -47,19 +47,24 @@ def bipolarity(p: np.ndarray) -> np.ndarray:
     return pos + neg - (pos - neg) ** 2
 
 
-def race_draws(groups: dict[str, np.ndarray], gold, gold_pred, weight, reps=1000, seed=0):
+def race_draws(groups: dict[str, np.ndarray], gold, gold_pred, weight, reps=1000, seed=0, cal_type=None):
     """groups: video_type -> predicted labels. Returns point (3,) and draws (reps, 3)
-    of the equally weighted mean of corrected shares across video types."""
+    of the equally weighted mean of corrected shares across video types.
+    cal_type (optional): video type of each labelled item; error rates are then
+    estimated per video type (falls back to pooled if a type has < 100 labels)."""
     rng = np.random.default_rng(seed)
     gold, gold_pred, weight = map(np.asarray, (gold, gold_pred, weight))
-    M = confusion_rates(gold, gold_pred, weight)
-    point = np.mean([adjust(shares(g), M) for g in groups.values()], axis=0)
+    idx = {vt: (np.flatnonzero(np.asarray(cal_type) == vt) if cal_type is not None else np.arange(len(gold)))
+           for vt in groups}
+    idx = {vt: (ix if len(ix) >= 100 else np.arange(len(gold))) for vt, ix in idx.items()}
+    point = np.mean([adjust(shares(g), confusion_rates(gold[idx[vt]], gold_pred[idx[vt]], weight[idx[vt]]))
+                     for vt, g in groups.items()], axis=0)
     draws = np.empty((reps, 3))
     for b in range(reps):
-        gi = rng.integers(0, len(gold), len(gold))
-        Mb = confusion_rates(gold[gi], gold_pred[gi], weight[gi])
         ps = []
-        for g in groups.values():
+        for vt, g in groups.items():
+            ix = idx[vt][rng.integers(0, len(idx[vt]), len(idx[vt]))]
+            Mb = confusion_rates(gold[ix], gold_pred[ix], weight[ix])
             qi = rng.integers(0, len(g), len(g))
             ps.append(adjust(shares(g[qi]), Mb))
         draws[b] = np.mean(ps, axis=0)
@@ -72,7 +77,8 @@ def build(df: pd.DataFrame, cal: pd.DataFrame, reps: int = 1000) -> pd.DataFrame
         groups = {vt: x["label"].to_numpy() for vt, x in g.groupby("video_type") if len(x) >= 10}
         if len(groups) < 4:
             continue
-        point, draws = race_draws(groups, cal["overall"], cal["label"], cal["weight"], reps)
+        point, draws = race_draws(groups, cal["overall"], cal["label"], cal["weight"], reps,
+                                  cal_type=cal["video_type"])
         all_draws[gp] = bipolarity(draws)
         def ci(v):
             return float(np.percentile(v, 2.5)), float(np.percentile(v, 97.5))
@@ -98,7 +104,7 @@ def main() -> None:
     df = df[df["video_type"].isin(CORE_TYPES)]
 
     labels = pd.read_parquet(ANN_ROOT / "labels_batch_01.parquet")
-    meta = pd.read_parquet(ANN_ROOT / "batch_01_meta.parquet")[["record_id", "weight"]]
+    meta = pd.read_parquet(ANN_ROOT / "batch_01_meta.parquet")[["record_id", "weight", "video_type"]]
     cal = labels.merge(meta, on="record_id").merge(an[["record_id", "label"]], on="record_id")
     cal = cal[cal["overall"].isin(LABELS)]
 
