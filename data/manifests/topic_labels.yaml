@@ -1,0 +1,22 @@
+# Topic names for analysis/topics/nmf_topics.py (k=15, seed 0, names removed).
+# Names were proposed by Claude from each topic's top words only and approved
+# by the project owner. kind: theme = what is discussed; reaction = how people react.
+# show: false = excluded from the website (unstable or uninterpretable).
+k: 15
+labelled_by: "proposed by AI (Claude) from top words, approved by project owner"
+topics:
+  0:  {name: "Title race & predictions", kind: theme}
+  1:  {name: "Boring races & calendar", kind: theme}
+  2:  {name: "\"Simply lovely\" catchphrase", kind: reaction}
+  3:  {name: "\"Great job\" praise", kind: reaction}
+  4:  {name: "Car pace & safety car", kind: theme, note: "mixes two ideas that share words"}
+  5:  {name: "\"Let's go\" cheering", kind: reaction}
+  6:  {name: "Penalties & pit stops", kind: theme}
+  7:  {name: "\"World champion\" talk", kind: theme}
+  8:  {name: "Driver of the day / best driver", kind: theme}
+  9:  {name: "GOAT talk", kind: reaction}
+  10: {name: "Happy & sad reactions", kind: reaction}
+  11: {name: "Best driver & car of the season", kind: theme, note: "overlaps topic 8"}
+  12: {name: "Pole laps & 'insane' moments", kind: reaction}
+  13: {name: "Rookies", kind: theme}
+  14: {name: "General season talk", kind: none, show: false, note: "stability 0.69, vague"}

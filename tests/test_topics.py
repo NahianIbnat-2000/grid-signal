@@ -23,3 +23,22 @@ def test_weak_assignments_become_unassigned():
     vec, nmf = fit(docs, 3, 0)
     lab = assign(vec, nmf, ["penalty stewards unfair", "zzz qqq"], min_weight=0.02)
     assert lab[0] >= 0 and lab[1] == -1
+
+
+def test_entity_names_are_removed_from_topics():
+    docs = ([f"verstappen max penalty stewards unfair" for i in range(80)]
+            + [f"norris lando tyre strategy pit" for i in range(80)]
+            + [f"leclerc rain wet crash" for i in range(80)])
+    vec, nmf = fit(docs, 3, 0)
+    vocab = set(vec.get_feature_names_out())
+    assert not {"verstappen", "max", "norris", "lando"} & vocab
+    assert {"penalty", "strategy"} <= vocab
+
+
+def test_stability_detects_noise_topics():
+    rng = np.random.default_rng(0)
+    import itertools
+    words = ["".join(p) for p in itertools.product("bcdfghk", "aeiou", "lmnrs")][:400]
+    noise = [" ".join(rng.choice(words, 6)) for _ in range(400)]   # no real structure
+    vec, nmf = fit(noise, 6, 0)
+    assert stability(vec, nmf, noise, 6, seeds=(1, 2))["mean"] < 0.8
