@@ -1,0 +1,1084 @@
+{
+  "split": "test",
+  "generated_at": "2026-11-28T08:49:23.045177+00:00",
+  "counts": {
+    "labelled": 792,
+    "annotator": [
+      "ai:claude-opus-5-5"
+    ],
+    "label_distribution": {
+      "negative": 312,
+      "positive": 269,
+      "neutral": 156,
+      "mixed": 50,
+      "off_topic": 5
+    },
+    "text_no_longer_available": 0,
+    "scored_3class": 737
+  },
+  "races": 18,
+  "bootstrap": "cluster by race, 2000 reps",
+  "note": "Sentiment estimated by GRID SIGNAL models; not YouTube data.",
+  "gold_labels_by": [
+    "ai:claude-opus-5-5"
+  ],
+  "models": {
+    "vader": {
+      "family": "lexicon",
+      "training": "none",
+      "thresholds": [
+        -0.05,
+        0.05
+      ],
+      "licence": "MIT",
+      "ms_per_comment": 0.22253025783759162,
+      "sample": {
+        "n": 737,
+        "accuracy": 0.44640434192673,
+        "macro_f1": 0.4368107251749338,
+        "weighted_f1": 0.4489622803974521,
+        "per_class": {
+          "negative": {
+            "precision": 0.6079545454545454,
+            "recall": 0.34294871794871795,
+            "f1": 0.4385245901639344
+          },
+          "neutral": {
+            "precision": 0.2926829268292683,
+            "recall": 0.46153846153846156,
+            "f1": 0.3582089552238806
+          },
+          "positive": {
+            "precision": 0.47619047619047616,
+            "recall": 0.5576208178438662,
+            "f1": 0.5136986301369864
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              107,
+              97,
+              108
+            ],
+            [
+              27,
+              72,
+              57
+            ],
+            [
+              42,
+              77,
+              150
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.4016450099703328,
+          0.4735968641472845
+        ]
+      },
+      "population_weighted": {
+        "n": 737,
+        "accuracy": 0.4513643268446263,
+        "macro_f1": 0.436132969106487,
+        "weighted_f1": 0.46339256336121243,
+        "per_class": {
+          "negative": {
+            "precision": 0.6585394995258115,
+            "recall": 0.3709887761455233,
+            "f1": 0.4746071938883972
+          },
+          "neutral": {
+            "precision": 0.24286688607432716,
+            "recall": 0.47774278186863744,
+            "f1": 0.32202704720333
+          },
+          "positive": {
+            "precision": 0.49584302785490625,
+            "recall": 0.5287427216473144,
+            "f1": 0.5117646662277339
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              107,
+              97,
+              108
+            ],
+            [
+              27,
+              72,
+              57
+            ],
+            [
+              42,
+              77,
+              150
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.39996317551160965,
+          0.472603711204594
+        ]
+      },
+      "subgroups": {
+        "short (<8 words)": {
+          "n": 260,
+          "macro_f1": 0.4393050157156428,
+          "accuracy": 0.4423076923076923
+        },
+        "long (>=8 words)": {
+          "n": 477,
+          "macro_f1": 0.42649998673698475,
+          "accuracy": 0.44863731656184486
+        },
+        "mentions driver/team": {
+          "n": 326,
+          "macro_f1": 0.3652566656828021,
+          "accuracy": 0.3895705521472393
+        },
+        "no driver/team": {
+          "n": 411,
+          "macro_f1": 0.48861351516740975,
+          "accuracy": 0.49148418491484186
+        },
+        "sarcasm=yes": {
+          "n": 33,
+          "macro_f1": 0.1873015873015873,
+          "accuracy": 0.18181818181818182
+        },
+        "sarcasm=no": {
+          "n": 704,
+          "macro_f1": 0.4484042866581679,
+          "accuracy": 0.4588068181818182
+        },
+        "annotator unsure": {
+          "n": 213,
+          "macro_f1": 0.3426054105955943,
+          "accuracy": 0.3427230046948357
+        },
+        "video: qualifying_highlights": {
+          "n": 187,
+          "macro_f1": 0.44118250170881756,
+          "accuracy": 0.44919786096256686
+        },
+        "video: qualifying_reactions": {
+          "n": 187,
+          "macro_f1": 0.4451162710162242,
+          "accuracy": 0.44919786096256686
+        },
+        "video: race_highlights": {
+          "n": 182,
+          "macro_f1": 0.43843396226415093,
+          "accuracy": 0.46703296703296704
+        },
+        "video: race_reactions": {
+          "n": 181,
+          "macro_f1": 0.40221912216797123,
+          "accuracy": 0.4198895027624309
+        }
+      }
+    },
+    "vader_tuned": {
+      "family": "lexicon",
+      "training": "threshold tuned on DEV labels",
+      "thresholds": [
+        -0.25,
+        0.25
+      ],
+      "licence": "MIT",
+      "ms_per_comment": 0.12916553587990143,
+      "sample": {
+        "n": 737,
+        "accuracy": 0.4233378561736771,
+        "macro_f1": 0.41657220032629,
+        "weighted_f1": 0.4243204943040567,
+        "per_class": {
+          "negative": {
+            "precision": 0.6013513513513513,
+            "recall": 0.28525641025641024,
+            "f1": 0.3869565217391304
+          },
+          "neutral": {
+            "precision": 0.2711864406779661,
+            "recall": 0.5128205128205128,
+            "f1": 0.35476718403547675
+          },
+          "positive": {
+            "precision": 0.48639455782312924,
+            "recall": 0.5315985130111525,
+            "f1": 0.5079928952042628
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              89,
+              125,
+              98
+            ],
+            [
+              23,
+              80,
+              53
+            ],
+            [
+              36,
+              90,
+              143
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.3816646505763273,
+          0.45033391990432864
+        ]
+      },
+      "population_weighted": {
+        "n": 737,
+        "accuracy": 0.43285552085856566,
+        "macro_f1": 0.4230678738254679,
+        "weighted_f1": 0.445576705856058,
+        "per_class": {
+          "negative": {
+            "precision": 0.6720754940774352,
+            "recall": 0.325772235964573,
+            "f1": 0.43883155686165454
+          },
+          "neutral": {
+            "precision": 0.23301061045937904,
+            "recall": 0.5421472601444618,
+            "f1": 0.3259363513828067
+          },
+          "positive": {
+            "precision": 0.5047904753121767,
+            "recall": 0.5040814494485321,
+            "f1": 0.5044357132319427
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              89,
+              125,
+              98
+            ],
+            [
+              23,
+              80,
+              53
+            ],
+            [
+              36,
+              90,
+              143
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.3832392559896224,
+          0.4606813215164955
+        ]
+      },
+      "subgroups": {
+        "short (<8 words)": {
+          "n": 260,
+          "macro_f1": 0.4356484012837276,
+          "accuracy": 0.43846153846153846
+        },
+        "long (>=8 words)": {
+          "n": 477,
+          "macro_f1": 0.4015600129957357,
+          "accuracy": 0.41509433962264153
+        },
+        "mentions driver/team": {
+          "n": 326,
+          "macro_f1": 0.3553475356696399,
+          "accuracy": 0.36809815950920244
+        },
+        "no driver/team": {
+          "n": 411,
+          "macro_f1": 0.46149136529209717,
+          "accuracy": 0.46715328467153283
+        },
+        "sarcasm=yes": {
+          "n": 33,
+          "macro_f1": 0.1512401693889897,
+          "accuracy": 0.15151515151515152
+        },
+        "sarcasm=no": {
+          "n": 704,
+          "macro_f1": 0.42832147355569167,
+          "accuracy": 0.43607954545454547
+        },
+        "annotator unsure": {
+          "n": 213,
+          "macro_f1": 0.3193346043782831,
+          "accuracy": 0.323943661971831
+        },
+        "video: qualifying_highlights": {
+          "n": 187,
+          "macro_f1": 0.429727565377415,
+          "accuracy": 0.4385026737967914
+        },
+        "video: qualifying_reactions": {
+          "n": 187,
+          "macro_f1": 0.4153610953128832,
+          "accuracy": 0.42245989304812837
+        },
+        "video: race_highlights": {
+          "n": 182,
+          "macro_f1": 0.43053613053613055,
+          "accuracy": 0.45054945054945056
+        },
+        "video: race_reactions": {
+          "n": 181,
+          "macro_f1": 0.37530409777138746,
+          "accuracy": 0.3812154696132597
+        }
+      }
+    },
+    "tfidf_logreg": {
+      "family": "classical_ml",
+      "training": "DynaSent rounds (2,) (13065 sentences)",
+      "licence": "data CC BY 4.0",
+      "fit_seconds": 10.168313500005752,
+      "ms_per_comment": 0.13461926720753373,
+      "dynasent_test_macro_f1": 0.5970610735472159,
+      "sample": {
+        "n": 737,
+        "accuracy": 0.42469470827679784,
+        "macro_f1": 0.425735285491383,
+        "weighted_f1": 0.43289195645485146,
+        "per_class": {
+          "negative": {
+            "precision": 0.609375,
+            "recall": 0.375,
+            "f1": 0.4642857142857143
+          },
+          "neutral": {
+            "precision": 0.2703349282296651,
+            "recall": 0.7243589743589743,
+            "f1": 0.39372822299651566
+          },
+          "positive": {
+            "precision": 0.6535433070866141,
+            "recall": 0.30855018587360594,
+            "f1": 0.41919191919191917
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              117,
+              165,
+              30
+            ],
+            [
+              29,
+              113,
+              14
+            ],
+            [
+              46,
+              140,
+              83
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.39872507241719124,
+          0.4549722002116685
+        ]
+      },
+      "population_weighted": {
+        "n": 737,
+        "accuracy": 0.4171600118396733,
+        "macro_f1": 0.42035333760929205,
+        "weighted_f1": 0.4412213723368425,
+        "per_class": {
+          "negative": {
+            "precision": 0.6310986260935286,
+            "recall": 0.3723728271661032,
+            "f1": 0.46838199304168404
+          },
+          "neutral": {
+            "precision": 0.21978693407817276,
+            "recall": 0.7164484974869576,
+            "f1": 0.3363812421077284
+          },
+          "positive": {
+            "precision": 0.7020800478415828,
+            "recall": 0.3379779103350287,
+            "f1": 0.45629677767846377
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              117,
+              165,
+              30
+            ],
+            [
+              29,
+              113,
+              14
+            ],
+            [
+              46,
+              140,
+              83
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.3872824500981082,
+          0.45705376107877077
+        ]
+      },
+      "subgroups": {
+        "short (<8 words)": {
+          "n": 260,
+          "macro_f1": 0.3637757065274656,
+          "accuracy": 0.3769230769230769
+        },
+        "long (>=8 words)": {
+          "n": 477,
+          "macro_f1": 0.45171909776398933,
+          "accuracy": 0.45073375262054505
+        },
+        "mentions driver/team": {
+          "n": 326,
+          "macro_f1": 0.39692214282378213,
+          "accuracy": 0.39570552147239263
+        },
+        "no driver/team": {
+          "n": 411,
+          "macro_f1": 0.4484968734968735,
+          "accuracy": 0.44768856447688565
+        },
+        "sarcasm=yes": {
+          "n": 33,
+          "macro_f1": 0.20096403411197628,
+          "accuracy": 0.2727272727272727
+        },
+        "sarcasm=no": {
+          "n": 704,
+          "macro_f1": 0.43325752312310883,
+          "accuracy": 0.4318181818181818
+        },
+        "annotator unsure": {
+          "n": 213,
+          "macro_f1": 0.3315786977758809,
+          "accuracy": 0.37089201877934275
+        },
+        "video: qualifying_highlights": {
+          "n": 187,
+          "macro_f1": 0.39608015779501327,
+          "accuracy": 0.40106951871657753
+        },
+        "video: qualifying_reactions": {
+          "n": 187,
+          "macro_f1": 0.4470440182245738,
+          "accuracy": 0.46524064171123
+        },
+        "video: race_highlights": {
+          "n": 182,
+          "macro_f1": 0.43383485905918606,
+          "accuracy": 0.43956043956043955
+        },
+        "video: race_reactions": {
+          "n": 181,
+          "macro_f1": 0.3849551414768806,
+          "accuracy": 0.39226519337016574
+        }
+      },
+      "ece": 0.2223674308132153
+    },
+    "tfidf_svm": {
+      "family": "classical_ml",
+      "training": "DynaSent rounds (2,) (13065 sentences)",
+      "licence": "data CC BY 4.0",
+      "fit_seconds": 2.730961999972351,
+      "ms_per_comment": 0.12191099047109868,
+      "dynasent_test_macro_f1": 0.5987312582052992,
+      "sample": {
+        "n": 737,
+        "accuracy": 0.4355495251017639,
+        "macro_f1": 0.4362325888838043,
+        "weighted_f1": 0.44823056719076904,
+        "per_class": {
+          "negative": {
+            "precision": 0.6047619047619047,
+            "recall": 0.40705128205128205,
+            "f1": 0.48659003831417624
+          },
+          "neutral": {
+            "precision": 0.2682926829268293,
+            "recall": 0.6346153846153846,
+            "f1": 0.37714285714285717
+          },
+          "positive": {
+            "precision": 0.6012658227848101,
+            "recall": 0.35315985130111527,
+            "f1": 0.4449648711943794
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              127,
+              145,
+              40
+            ],
+            [
+              34,
+              99,
+              23
+            ],
+            [
+              49,
+              125,
+              95
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.41046302379517435,
+          0.4612314700969334
+        ]
+      },
+      "population_weighted": {
+        "n": 737,
+        "accuracy": 0.4322204671783547,
+        "macro_f1": 0.43104699996935353,
+        "weighted_f1": 0.4570476494142888,
+        "per_class": {
+          "negative": {
+            "precision": 0.6211747194523835,
+            "recall": 0.4026228257638226,
+            "f1": 0.4885714407259148
+          },
+          "neutral": {
+            "precision": 0.22000406837643444,
+            "recall": 0.6290889838520591,
+            "f1": 0.3259999253438848
+          },
+          "positive": {
+            "precision": 0.6453587938642572,
+            "recall": 0.3802867694174532,
+            "f1": 0.4785696338382609
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              127,
+              145,
+              40
+            ],
+            [
+              34,
+              99,
+              23
+            ],
+            [
+              49,
+              125,
+              95
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.39085076585829026,
+          0.4678779868423208
+        ]
+      },
+      "subgroups": {
+        "short (<8 words)": {
+          "n": 260,
+          "macro_f1": 0.3931178552296564,
+          "accuracy": 0.39615384615384613
+        },
+        "long (>=8 words)": {
+          "n": 477,
+          "macro_f1": 0.4536393199119386,
+          "accuracy": 0.4570230607966457
+        },
+        "mentions driver/team": {
+          "n": 326,
+          "macro_f1": 0.4138034529600794,
+          "accuracy": 0.41411042944785276
+        },
+        "no driver/team": {
+          "n": 411,
+          "macro_f1": 0.4539828481645278,
+          "accuracy": 0.45255474452554745
+        },
+        "sarcasm=yes": {
+          "n": 33,
+          "macro_f1": 0.22010869565217392,
+          "accuracy": 0.2727272727272727
+        },
+        "sarcasm=no": {
+          "n": 704,
+          "macro_f1": 0.44439200289371034,
+          "accuracy": 0.4431818181818182
+        },
+        "annotator unsure": {
+          "n": 213,
+          "macro_f1": 0.34606460513196263,
+          "accuracy": 0.3755868544600939
+        },
+        "video: qualifying_highlights": {
+          "n": 187,
+          "macro_f1": 0.45106871633052265,
+          "accuracy": 0.45454545454545453
+        },
+        "video: qualifying_reactions": {
+          "n": 187,
+          "macro_f1": 0.47112775697045367,
+          "accuracy": 0.48128342245989303
+        },
+        "video: race_highlights": {
+          "n": 182,
+          "macro_f1": 0.41014373674512,
+          "accuracy": 0.4230769230769231
+        },
+        "video: race_reactions": {
+          "n": 181,
+          "macro_f1": 0.3739792090879863,
+          "accuracy": 0.3812154696132597
+        }
+      }
+    },
+    "roberta_twitter": {
+      "family": "transformer",
+      "training": "pretrained inference only (TweetEval)",
+      "licence": "CC BY 4.0",
+      "native_classes": 3,
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "revision": null,
+      "n_params": 124647939,
+      "max_length": 128,
+      "ms_per_comment": 89.79423609221028,
+      "sample": {
+        "n": 737,
+        "accuracy": 0.6227951153324288,
+        "macro_f1": 0.6188578671700049,
+        "weighted_f1": 0.6392610242488683,
+        "per_class": {
+          "negative": {
+            "precision": 0.7584745762711864,
+            "recall": 0.5737179487179487,
+            "f1": 0.6532846715328468
+          },
+          "neutral": {
+            "precision": 0.3822525597269625,
+            "recall": 0.717948717948718,
+            "f1": 0.49888641425389757
+          },
+          "positive": {
+            "precision": 0.8076923076923077,
+            "recall": 0.6245353159851301,
+            "f1": 0.7044025157232704
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              179,
+              106,
+              27
+            ],
+            [
+              31,
+              112,
+              13
+            ],
+            [
+              26,
+              75,
+              168
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.5764525772171604,
+          0.6560192403229658
+        ]
+      },
+      "population_weighted": {
+        "n": 737,
+        "accuracy": 0.6094401539035336,
+        "macro_f1": 0.5978667349249408,
+        "weighted_f1": 0.6357923959307181,
+        "per_class": {
+          "negative": {
+            "precision": 0.8012846214134466,
+            "recall": 0.5576926312955396,
+            "f1": 0.6576571138949135
+          },
+          "neutral": {
+            "precision": 0.31449364757942555,
+            "recall": 0.7336066976047315,
+            "f1": 0.44025297249161915
+          },
+          "positive": {
+            "precision": 0.8038285957757623,
+            "recall": 0.6131971508789742,
+            "f1": 0.6956901183882896
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              179,
+              106,
+              27
+            ],
+            [
+              31,
+              112,
+              13
+            ],
+            [
+              26,
+              75,
+              168
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.5558134586625391,
+          0.6415916758287972
+        ]
+      },
+      "subgroups": {
+        "short (<8 words)": {
+          "n": 260,
+          "macro_f1": 0.6005432769477713,
+          "accuracy": 0.6
+        },
+        "long (>=8 words)": {
+          "n": 477,
+          "macro_f1": 0.6256888359260954,
+          "accuracy": 0.6352201257861635
+        },
+        "mentions driver/team": {
+          "n": 326,
+          "macro_f1": 0.5933724959310271,
+          "accuracy": 0.5950920245398773
+        },
+        "no driver/team": {
+          "n": 411,
+          "macro_f1": 0.6397531124913787,
+          "accuracy": 0.6447688564476886
+        },
+        "sarcasm=yes": {
+          "n": 33,
+          "macro_f1": 0.1996434937611408,
+          "accuracy": 0.24242424242424243
+        },
+        "sarcasm=no": {
+          "n": 704,
+          "macro_f1": 0.6366514149443478,
+          "accuracy": 0.640625
+        },
+        "annotator unsure": {
+          "n": 213,
+          "macro_f1": 0.4649086360201162,
+          "accuracy": 0.4694835680751174
+        },
+        "video: qualifying_highlights": {
+          "n": 187,
+          "macro_f1": 0.5944795321637426,
+          "accuracy": 0.5989304812834224
+        },
+        "video: qualifying_reactions": {
+          "n": 187,
+          "macro_f1": 0.6569972757542124,
+          "accuracy": 0.6524064171122995
+        },
+        "video: race_highlights": {
+          "n": 182,
+          "macro_f1": 0.6106690810652619,
+          "accuracy": 0.6263736263736264
+        },
+        "video: race_reactions": {
+          "n": 181,
+          "macro_f1": 0.5990045794694819,
+          "accuracy": 0.6132596685082873
+        }
+      },
+      "ece": 0.1285088327150979
+    },
+    "distilbert_sst2": {
+      "family": "transformer",
+      "training": "pretrained inference only (SST-2); neutral = low-confidence band tuned on DEV",
+      "licence": "Apache-2.0",
+      "native_classes": 2,
+      "model_id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "revision": null,
+      "n_params": 66955010,
+      "max_length": 128,
+      "ms_per_comment": 42.34981221169628,
+      "neutral_band": 0.425,
+      "sample": {
+        "n": 737,
+        "accuracy": 0.5332428765264586,
+        "macro_f1": 0.4652667984189723,
+        "weighted_f1": 0.5167308445197656,
+        "per_class": {
+          "negative": {
+            "precision": 0.5634920634920635,
+            "recall": 0.6826923076923077,
+            "f1": 0.6173913043478261
+          },
+          "neutral": {
+            "precision": 0.24,
+            "recall": 0.15384615384615385,
+            "f1": 0.1875
+          },
+          "positive": {
+            "precision": 0.6023166023166023,
+            "recall": 0.5799256505576208,
+            "f1": 0.5909090909090909
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              213,
+              41,
+              58
+            ],
+            [
+              87,
+              24,
+              45
+            ],
+            [
+              78,
+              35,
+              156
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.43448234669108365,
+          0.4975497897976876
+        ]
+      },
+      "population_weighted": {
+        "n": 737,
+        "accuracy": 0.5517021973956996,
+        "macro_f1": 0.47429733834135934,
+        "weighted_f1": 0.5426141827359461,
+        "per_class": {
+          "negative": {
+            "precision": 0.568048820257629,
+            "recall": 0.6595031158676473,
+            "f1": 0.6103692331052869
+          },
+          "neutral": {
+            "precision": 0.23002906148220864,
+            "recall": 0.17004950450474787,
+            "f1": 0.19554323201616877
+          },
+          "positive": {
+            "precision": 0.6386537569573283,
+            "recall": 0.5967281850628546,
+            "f1": 0.6169795499026224
+          }
+        },
+        "confusion": {
+          "labels": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "matrix": [
+            [
+              213,
+              41,
+              58
+            ],
+            [
+              87,
+              24,
+              45
+            ],
+            [
+              78,
+              35,
+              156
+            ]
+          ]
+        },
+        "macro_f1_ci95": [
+          0.4359662210620186,
+          0.5096352496348759
+        ]
+      },
+      "subgroups": {
+        "short (<8 words)": {
+          "n": 260,
+          "macro_f1": 0.4927350224208141,
+          "accuracy": 0.5230769230769231
+        },
+        "long (>=8 words)": {
+          "n": 477,
+          "macro_f1": 0.4400703160090244,
+          "accuracy": 0.5387840670859538
+        },
+        "mentions driver/team": {
+          "n": 326,
+          "macro_f1": 0.41641024150181655,
+          "accuracy": 0.5153374233128835
+        },
+        "no driver/team": {
+          "n": 411,
+          "macro_f1": 0.4961985974644203,
+          "accuracy": 0.5474452554744526
+        },
+        "sarcasm=yes": {
+          "n": 33,
+          "macro_f1": 0.18323586744639375,
+          "accuracy": 0.2727272727272727
+        },
+        "sarcasm=no": {
+          "n": 704,
+          "macro_f1": 0.47728900347531694,
+          "accuracy": 0.5454545454545454
+        },
+        "annotator unsure": {
+          "n": 213,
+          "macro_f1": 0.3583449645345829,
+          "accuracy": 0.38967136150234744
+        },
+        "video: qualifying_highlights": {
+          "n": 187,
+          "macro_f1": 0.4514023225679667,
+          "accuracy": 0.5080213903743316
+        },
+        "video: qualifying_reactions": {
+          "n": 187,
+          "macro_f1": 0.44280880555215446,
+          "accuracy": 0.48663101604278075
+        },
+        "video: race_highlights": {
+          "n": 182,
+          "macro_f1": 0.4878042199557498,
+          "accuracy": 0.5824175824175825
+        },
+        "video: race_reactions": {
+          "n": 181,
+          "macro_f1": 0.46788766788766784,
+          "accuracy": 0.5580110497237569
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "vader_tuned - vader": {
+      "diff": -0.020238524848643802,
+      "ci95": [
+        -0.03427427544803325,
+        -0.007121520348468931
+      ],
+      "share_resamples_a_better": 0.0005
+    },
+    "tfidf_logreg - vader": {
+      "diff": -0.011075439683550792,
+      "ci95": [
+        -0.05047707717815641,
+        0.025079690995768407
+      ],
+      "share_resamples_a_better": 0.2945
+    },
+    "tfidf_svm - vader": {
+      "diff": -0.0005781362911295163,
+      "ci95": [
+        -0.048100967339562796,
+        0.04287748088076642
+      ],
+      "share_resamples_a_better": 0.4935
+    },
+    "roberta_twitter - vader": {
+      "diff": 0.1820471419950711,
+      "ci95": [
+        0.13904577452171377,
+        0.22190501599777349
+      ],
+      "share_resamples_a_better": 1.0
+    },
+    "distilbert_sst2 - vader": {
+      "diff": 0.028456073244038482,
+      "ci95": [
+        -0.016479295846491698,
+        0.07412723337582974
+      ],
+      "share_resamples_a_better": 0.8925
+    }
+  }
+}
